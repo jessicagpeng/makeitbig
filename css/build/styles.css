@@ -1,0 +1,193 @@
+/* Scss Document */
+/* Variables */
+/* COLORS */
+/* FONTS */
+/*will be Doyle*/
+/*will be Cinetype*/
+/* logo */
+.site-logo {
+  display: flex; }
+
+.logomark {
+  background-color: #FFF7E3;
+  width: 3em;
+  height: 3em;
+  border-style: none solid none none;
+  border-color: #00685C;
+  border-width: 1px; }
+
+.site-title-link {
+  color: #00685C;
+  text-decoration: none;
+  font-family: "Suez One", serif;
+  letter-spacing: .12em; }
+
+.site-title {
+  padding: .8em 1em; }
+
+/* nav */
+.site-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-style: solid;
+  border-color: #00685C;
+  border-width: 1px;
+  z-index: 9999; }
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: #00685C;
+  margin: 6px 0;
+  transition: 0.4s; }
+  @media (min-width: 45rem) {
+    .bar1, .bar2, .bar3 {
+      display: none; } }
+
+.primary-nav {
+  border-style: none;
+  border-color: white;
+  border-width: 1px;
+  background-color: #00685C;
+  display: none; }
+  @media (min-width: 45rem) {
+    .primary-nav {
+      display: inline-block;
+      position: absolute;
+      top: 0em;
+      right: 0;
+      font-size: .8em;
+      border-left: solid #00685C 1px;
+      background-color: #FFF7E3;
+      color: #00685C;
+      padding: 0;
+      height: 100%; } }
+  .primary-nav a {
+    font-family: "Suez One", serif;
+    letter-spacing: .1em;
+    display: block;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1em 2em;
+    background-color: rgba(255, 255, 255, 0);
+    color: white; }
+    @media (min-width: 45rem) {
+      .primary-nav a {
+        color: #00685C;
+        border-right: solid #00685C 1px;
+        height: 115%; } }
+  .primary-nav a:hover {
+    color: #0198BD; }
+  .primary-nav a:active {
+    color: #0198BD; }
+  @media (min-width: 45rem) {
+    .primary-nav ul {
+      display: flex;
+      text-decoration: none; }
+    .primary-nav li:last-child a {
+      margin-right: 0; } }
+
+#timelineNav {
+  display: none; }
+
+.students-nav {
+  background-color: #00685C;
+  animation: fadeIn ease .5s;
+  -webkit-animation: fadeIn ease .5s;
+  -moz-animation: fadeIn ease .5s;
+  -o-animation: fadeIn ease .5s;
+  -ms-animation: fadeIn ease .5s; }
+  @media (min-width: 45rem) {
+    .students-nav {
+      position: absolute;
+      top: 3.3em;
+      width: 100vw;
+      right: 0;
+      align-content: right;
+      padding: 0 3em 0 3em; } }
+  @media (min-width: 55rem) {
+    .students-nav {
+      padding: 0 10em 0 10em; } }
+  @media (min-width: 65rem) {
+    .students-nav {
+      padding: 0 15em 0 15em; } }
+  @media (min-width: 75rem) {
+    .students-nav {
+      padding: 0 20em 0 20em; } }
+  @media (min-width: 85rem) {
+    .students-nav {
+      padding: 0 25em 0 25em; } }
+  @media (min-width: 45rem) {
+    .students-nav__links {
+      display: flex;
+      justify-content: space-between;
+      text-align: center; } }
+  .students-nav a:hover {
+    color: black; }
+  .students-nav a:active {
+    color: #FF2400; }
+
+.down {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  right: 5%;
+  position: absolute; }
+  @media (min-width: 45rem) {
+    .down {
+      position: relative;
+      right: 0;
+      border-width: 0 1px 1px 0;
+      top: -.25em; } }
+
+.menu-icon {
+  font-size: .9em;
+  padding: .5em;
+  position: absolute;
+  top: .25em;
+  right: 1em;
+  color: white; }
+  @media (min-width: 45rem) {
+    .menu-icon .menu-icon {
+      display: none; } }
+
+.show-menu .primary-nav {
+  display: block; }
+
+/*.nav-underline {
+  background-color: white;
+  height: 1.5px; 
+}*/
+.site {
+  min-width: 100vw;
+  min-height: 100vh;
+  top: calc(100vh - 3em);
+  background-color: white;
+  border: solid #00685C 1px;
+  border-top: none;
+  padding: 1em; }
+  .site__intro__text {
+    color: #00685C;
+    font-family: "Suez One", serif;
+    font-size: 3em; }
+
+/* footer */
+.footer {
+  height: 8em;
+  width: 100vw;
+  background-color: #FFF7E3;
+  border: solid #00685C 1px;
+  border-top: none;
+  padding: 1em 1.5em;
+  display: flex; }
+  .footer__links {
+    color: #00685C;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-decoration: none; }

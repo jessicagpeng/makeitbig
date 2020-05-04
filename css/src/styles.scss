@@ -1,0 +1,266 @@
+/* Scss Document */
+
+/* Variables */
+/* COLORS */
+$green: #00685C;
+$beige: #FFF7E3;
+$blue: #0198BD;
+$lightgreen: #5EB34B;
+$pink: #EB3772;
+$yellow: #FFE41B;
+
+/* FONTS */
+
+$display: 'Suez One', serif; /*will be Doyle*/
+$sans: 'Raleway', sans-serif; /*will be Cinetype*/
+$body: 'Raleway', sans-serif;
+
+
+/* logo */
+.site-logo {
+	display: flex;
+}
+
+.logomark {
+	background-color: $beige;
+	width: 3em;
+	height: 3em;
+	border-style: none solid none none;
+	border-color: $green;
+	border-width: 1px;
+}
+
+.site-title-link {
+	color: $green;
+	text-decoration: none;
+	font-family: $display;
+	letter-spacing: .12em;
+}
+
+.site-title {
+	padding: .8em 1em;
+}
+
+
+/* nav */
+.site-header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color:white;
+	border-style: solid;
+	border-color: $green;
+	border-width: 1px;
+	z-index: 9999;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: $green;
+    margin: 6px 0;
+    transition: 0.4s;
+	
+	@media (min-width: 45rem){
+		display: none;
+	}
+}
+
+.primary-nav {
+	border-style: none;
+	border-color: white;
+	border-width: 1px;
+	background-color: $green;
+	display: none;
+	
+	@media (min-width: 45rem){
+		display: inline-block;
+		position: absolute;
+		top:0em;
+		right:0;
+		font-size: .8em;
+		border-left: solid $green 1px;
+		background-color: $beige;
+		color: $green;
+		padding: 0;
+		height: 100%;
+	}
+	
+	a {
+		font-family: $display;
+		letter-spacing: .1em;
+		display: block;
+		text-decoration: none;
+		font-size: 1em;
+		padding: 1em 2em;
+		background-color: rgba(255, 255, 255, 0);
+		color: white;
+		
+		@media (min-width: 45rem){
+			color: $green;
+			border-right: solid $green 1px;
+			height: 115%;
+		}
+	}
+
+	a:hover {
+		color: $blue;
+	}
+	
+	a:active {
+		color: $blue;
+	}
+
+	@media (min-width: 45rem) {
+		ul {
+			display: flex;
+			text-decoration:none;
+		}
+		li:last-child a {
+			margin-right: 0;
+		}	
+	}
+}
+
+#timelineNav {
+	display:none;
+}
+
+.students-nav {
+	background-color: $green;
+	animation: fadeIn ease .5s;
+	-webkit-animation: fadeIn ease .5s;
+	-moz-animation: fadeIn ease .5s;
+	-o-animation: fadeIn ease .5s;
+	-ms-animation: fadeIn ease .5s;
+	
+	@media (min-width: 45rem) {
+		position: absolute;
+		top: 3.3em;
+		width: 100vw;
+		right:0;
+		align-content: right;
+		padding: 0 3em 0 3em;
+	}
+	@media (min-width: 55rem) {
+		padding: 0 10em 0 10em;
+	}	
+	@media (min-width: 65rem) {
+		padding: 0 15em 0 15em;
+	}
+	@media (min-width: 75rem) {
+		padding: 0 20em 0 20em;
+	}
+	@media (min-width: 85rem) {
+		padding: 0 25em 0 25em;
+	}
+	
+	
+	&__links {
+		
+		@media (min-width: 45rem) {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+		}
+	}
+	
+	a:hover {
+		color: black;
+	}
+	
+	a:active {
+		color: #FF2400;
+	}
+}
+
+
+
+.down {
+	border: solid white;
+  	border-width: 0 2px 2px 0;
+  	display: inline-block;
+  	padding: 2px;
+ 	transform: rotate(45deg);
+  	-webkit-transform: rotate(45deg);
+	right: 5%;
+	position: absolute;
+	
+	@media (min-width: 45rem) {
+		position: relative;
+		right: 0;
+		border-width: 0 1px 1px 0;
+		top: -.25em;
+	}
+}
+
+
+.menu-icon {
+	font-size: .9em;
+	padding: .5em;
+	position: absolute;
+	top: .25em;
+	right: 1em;
+	color: white;
+	
+	@media (min-width: 45rem){
+		.menu-icon{
+			display: none;
+		}
+	}
+}
+
+.show-menu .primary-nav {
+	display: block;
+}
+
+/*.nav-underline {
+  background-color: white;
+  height: 1.5px; 
+}*/
+
+
+.site {
+	min-width: 100vw;
+	min-height: 100vh;
+	top: calc(100vh - 3em);
+	background-color: white;
+	border: solid $green 1px;
+	border-top: none;
+	padding: 1em;
+	
+	&__intro {
+		
+		
+		&__text {
+			color: $green;
+			font-family: $display;
+			font-size: 3em;
+		}
+	}
+	
+}
+
+
+
+
+/* footer */
+.footer {
+	height: 8em;
+	width: 100vw;
+	background-color: $beige;
+	border: solid $green 1px;
+	border-top: none;
+	padding: 1em 1.5em;
+	display: flex;
+	
+	&__links{
+		color: $green;
+		font-family: $sans;
+		font-weight: 400;
+		line-height: 1.5em;
+		text-decoration: none;
+	}
+	
+
+}
