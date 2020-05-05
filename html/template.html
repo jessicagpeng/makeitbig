@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="initial-scale=1.0,width=device-width" name="viewport">
+
+	<title>Work</title>
+
+	<link href="../css/build/styles.css" rel="stylesheet" type="text/css">
+	<link href="../css/build/reset.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Suez+One&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+	</style>
+	
+	
+</head>
+
+<body>
+	<div id="top"></div>
+	<header class="site-header">
+		<div id="navbar">
+			<div class= "site-logo"> 
+				<a class="site-logo-link" href="#home">
+			  		<div class="logomark"></div>
+			  		<h1 class="site-title"> <a class="site-title-link" href="#top">Make It BIG</a> </h1>
+				</a> 
+			</div>
+		<button class="menu-icon  js-menu-icon">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</button>
+		<!--<div class="nav-underline"></div>-->
+		<script>
+			function myFunction(x) {
+				x.classList.toggle("change");
+			}
+		</script>
+		<nav class="primary-nav">
+		  	<ul class="nav-links">
+				<li><a onclick="myFunction()">Students<span class="down"></span></a></li>
+			  <!--	<div class="students-nav" id="studentsNav">
+					<ul class="students-nav__links">
+						<li><a href="#BFA4">BFA4</a></li>
+						<li><a href="#BFA3">BFA3</a></li>
+						<li><a href="#BFA2">BFA2</a></li>
+						<li><a href="#BFA1">BFA1</a></li>
+						<li><a href="#MFA2">MFA2</a></li>
+						<li><a href="#MFA1">MFA1</a></li>
+						<li><a href="#PMFA">PMFA</a></li>
+					</ul>
+				</div>-->
+				<li><a href="#">Work</a></li>
+				<li><a href="#">About</a></li>
+		 	</ul>
+		</nav>
+		<!--<script>
+			function myFunction() {
+			  	var x = document.getElementById("studentsNav");
+			  	if (x.style.display === "block") {
+					x.style.display = "none";
+			  	} else {
+					x.style.display = "block";
+				}
+			}
+		</script>	-->
+		
+			
+			
+			
+			
+		<!--<div class="nav-underline"></div>--> 
+		</div>
+	</header>
+	
+	
+	<div class="site">
+		<div class="site__title__name">
+			<h2 class="site__name"> 
+				John Doe
+			</h2>
+		</div>
+		
+		<div class="tab">
+		 	<button class="tablinks" onclick="openCity(event, 'info')">
+			  ?
+			</button>
+		  	<button class="tablinks" onclick="openCity(event, 'proj1')">
+				Project 1
+			</button>
+			<button class="tablinks" onclick="openCity(event, 'proj2')">
+				Project 2
+			</button>
+			<button class="tablinks" onclick="openCity(event, 'proj3')">
+				Project 3
+			</button>
+			<button class="tablinks" onclick="openCity(event, 'proj4')">
+				Project 4
+			</button>
+		</div>
+
+		<div id="info" class="tabcontent">
+			<div class="info__container">
+				here is some info stuff
+			</div>
+		</div>
+		<div id="proj1" class="tabcontent">
+		  	<div class="category__container">
+				<a class="category__box" href="">Print</a>
+				<a class="category__box" href="">Branding</a>
+				<a class="category__box" href="">Motion</a>
+				<a class="category__box" href="">Web</a>
+				<a class="category__box" href="">Posters</a>
+				<a class="category__box" href="">Events</a>
+				<a class="category__box" href="">Other</a>
+				<a class="category__box" href=""></a>
+			</div>
+		</div>
+		<div id="proj2" class="tabcontent">
+		  	<div class="category__container">
+				<a class="category__box" href="">Print</a>
+				<a class="category__box" href="">Branding</a>
+				<a class="category__box" href="">Motion</a>
+				<a class="category__box" href="">Web</a>
+				<a class="category__box" href="">Posters</a>
+				<a class="category__box" href="">Events</a>
+				<a class="category__box" href="">Other</a>
+				<a class="category__box" href=""></a>
+			</div>
+		</div>
+		<div id="proj3" class="tabcontent">
+		  	<div class="category__container">
+				<a class="category__box" href="">Print</a>
+				<a class="category__box" href="">Branding</a>
+				<a class="category__box" href="">Motion</a>
+				<a class="category__box" href="">Web</a>
+				<a class="category__box" href="">Posters</a>
+				<a class="category__box" href="">Events</a>
+				<a class="category__box" href="">Other</a>
+				<a class="category__box" href=""></a>
+			</div>
+		</div>
+		<div id="proj4" class="tabcontent">
+		  	<div class="category__container">
+				<a class="category__box" href="">Print</a>
+				<a class="category__box" href="">Branding</a>
+				<a class="category__box" href="">Motion</a>
+				<a class="category__box" href="">Web</a>
+				<a class="category__box" href="">Posters</a>
+				<a class="category__box" href="">Events</a>
+				<a class="category__box" href="">Other</a>
+				<a class="category__box" href=""></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="hello">
+		<div class="try"> ? </div>
+		<div class="try"> project 1 </div>
+		<div class="try"> project ? </div>
+		<div class="try"> project ? </div>
+		<div class="try"> project ? </div>
+	</div>
+	
+	
+	
+	
+	<!-- SITE FOOTER -->
+	<div class="footer">
+		<div class="footer__content">
+			<ul class="footer__links">
+				<li><a href=""></a>Home</li>
+				<li><a href=""></a>Students</li>
+				<li><a href=""></a>Work</li>
+				<li><a href=""></a>About</li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+<script src="../js/scripts.js"></script>
