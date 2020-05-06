@@ -310,6 +310,20 @@ $body: 'Raleway', sans-serif;
 		}
 	}
 	
+	&__students {
+		border-top: solid $green 1px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	&__class {
+		background-color: white;
+		width: 100%;
+		border-bottom: solid $green 1px;
+		padding: 1em;
+		
+	}
+	
 }
 
 /* Style the tab */
@@ -378,11 +392,14 @@ $body: 'Raleway', sans-serif;
 
 .category {
 	display: flex;
+
 	
 	&__container {
 		display: flex;
 		flex-wrap: wrap;
-		
+		a:nth-child(even) {
+			border-right: none;
+		}
 	}
 	
 	&__box {
@@ -428,6 +445,33 @@ a.category__box:hover {
 	}
 }
 
+.class {
+	background-color: white;
+	font-family: $sans;
+	font-weight: bold;
+	color: $green;
+	padding: .5em;
+	border: solid $green 1px;
+	margin-bottom: .5em;
+	
+	&__names {
+		font-family: $sans;
+		font-size: .8em;
+		padding: .5em;
+		
+
+	}
+	
+}
+
+.names {
+	margin-bottom: .6em;
+	
+	a {
+		text-decoration: underline;
+		color: $green;
+	}
+}
 
 .info {
 	&__container {
