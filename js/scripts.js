@@ -42,7 +42,7 @@ function openCity(evt, cityName) {
 
 
 
-var slideIndex = [1,1];
+var slideIndex = [1,1,2,3];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
 showSlides(1, 0);
 showSlides(1, 1);
