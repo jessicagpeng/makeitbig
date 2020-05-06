@@ -58,7 +58,7 @@ $body: 'Raleway', sans-serif;
 .logomark {
 	background-color: $beige;
 	width: 3em;
-	height: 3em;
+	height: 100%;
 	border-style: none solid none none;
 	border-color: $green;
 	border-width: 1px;
@@ -101,9 +101,6 @@ $body: 'Raleway', sans-serif;
 }
 
 .primary-nav {
-	border-style: none;
-	border-color: white;
-	border-width: 1px;
 	background-color: $green;
 	display: none;
 	
@@ -126,14 +123,14 @@ $body: 'Raleway', sans-serif;
 		display: block;
 		text-decoration: none;
 		font-size: 1em;
-		padding: 1em 2em;
+		padding: 1.25em 2em 1em;
 		background-color: rgba(255, 255, 255, 0);
 		color: white;
 		
 		@media (min-width: 45rem){
 			color: $green;
 			border-right: solid $green 1px;
-			height: 115%;
+			height: 105%;
 		}
 	}
 
@@ -357,6 +354,7 @@ $body: 'Raleway', sans-serif;
 .tabcontent {
   	display: none;
   	border-top: none;
+	border-bottom: solid $green 1px;
 }
 
 .category {
@@ -443,7 +441,6 @@ a.category__box:hover {
   		position: relative;
   		margin: auto;
 		display: flex;
-		border-bottom: solid $green 1px;
 		
 		&__left {
 			border-right: solid $green 1px;
@@ -456,10 +453,18 @@ a.category__box:hover {
 		padding: 1em;
 		border-top: solid $green 1px;
 		
+		h3 {
+			font-family: $sans;
+			color: $green;
+			font-size: .8em;
+			margin-bottom: .5em;
+			font-weight: bold;
+		}
 		p {
 			font-family: $sans;
 			color: $green;
-			font-size: .9em;
+			font-size: .8em;
+			margin-bottom: .5em;
 		}
 	}
 }
@@ -492,22 +497,54 @@ a.category__box:hover {
 }
 
 /* The dots/bullets/indicators */
-.dot1.dot2.dot3.dot4 {
+
+.dots {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: .4em;
+}
+.dot1 {
   	cursor: pointer;
-  	height: 15px;
-  	width: 15px;
-  	margin: 0 2px;
+  	height: 12px;
+  	width: 12px;
+  	margin: 0 4px;
   	background-color: white;
   	border-radius: 50%;
 	border: solid $green 1px;
-  display: inline-block;
-  transition: 0s;
+  	display: inline-block;
+  	transition: 0s;
 }
 
 .active, .dot1:hover {
   background-color: $lightgreen;
 }
 
+
+.tags {
+		border: solid $green 1px;
+		border-bottom: none;
+	
+	&__container {
+		width: 100%;
+		background-color: white;
+		padding: 1em;
+
+		
+		a {
+			font-family: $sans;
+			color: $green;
+			padding: 1em;
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
+}
+
+.tag {
+	border: solid 1px $green;
+	display: inline-block;
+}
 
 
 /* footer */
@@ -517,8 +554,23 @@ a.category__box:hover {
 	background-color: $beige;
 	border: solid $green 1px;
 	border-top: none;
-	padding: 1em 1.5em;
 	display: flex;
+	
+	&__content {
+		padding: 1em;
+		width: 50%;
+
+	}
+	
+	&__credit {
+		
+		p {
+			font-family: $sans;
+			text-align: center;
+			color: $green;
+			font-size: .7em;
+		}
+	}
 	
 	&__links{
 		color: $green;
