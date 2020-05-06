@@ -408,23 +408,26 @@ a.category__box:hover {
 
 /* footer */
 .footer {
-  height: 8em;
+  height: 100%;
   width: 100vw;
   background-color: #FFF7E3;
   border: solid #00685C 1px;
   border-top: none;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .footer__content {
-    padding: 1em;
-    width: 50%; }
-  .footer__credit p {
-    font-family: "cinetype", sans-serif;
-    text-align: center;
-    color: #00685C;
-    font-size: .7em; }
+    width: 100%; }
+  .footer__credit {
+    padding: 1em; }
+    .footer__credit p {
+      font-family: "cinetype", sans-serif;
+      text-align: center;
+      color: #00685C;
+      font-size: .6em; }
   .footer__links {
     color: #00685C;
     font-family: "cinetype", sans-serif;
     font-weight: 400;
     line-height: 1.5em;
-    text-decoration: none; }
+    text-decoration: none;
+    padding: 1em 1.5em; }

@@ -549,26 +549,27 @@ a.category__box:hover {
 
 /* footer */
 .footer {
-	height: 8em;
+	height: 100%;
 	width: 100vw;
 	background-color: $beige;
 	border: solid $green 1px;
 	border-top: none;
 	display: flex;
+	flex-wrap: wrap;
 	
 	&__content {
-		padding: 1em;
-		width: 50%;
+		width: 100%;
 
 	}
 	
 	&__credit {
+		padding: 1em;
 		
 		p {
 			font-family: $sans;
 			text-align: center;
 			color: $green;
-			font-size: .7em;
+			font-size: .6em;
 		}
 	}
 	
@@ -578,6 +579,7 @@ a.category__box:hover {
 		font-weight: 400;
 		line-height: 1.5em;
 		text-decoration: none;
+		padding: 1em 1.5em;
 	}
 	
 
