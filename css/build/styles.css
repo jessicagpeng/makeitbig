@@ -108,7 +108,8 @@
       display: flex;
       text-decoration: none; }
     .primary-nav li:last-child a {
-      margin-right: 0; } }
+      margin-right: 0;
+      border-right: none; } }
 
 #timelineNav {
   display: none; }
@@ -217,6 +218,12 @@
     font-size: 1em;
     text-align: center;
     font-weight: bold; }
+  .site__about {
+    border-top: solid #00685C 1px; }
+    .site__about p {
+      padding: 1em;
+      font-family: "cinetype", sans-serif;
+      color: #00685C; }
 
 /* Style the tab */
 .tab {
@@ -239,7 +246,9 @@
   background-color: white;
   width: auto;
   flex-grow: 1;
-  border-left: 0.5px solid #00685C; }
+  border-right: 0.5px solid #00685C; }
+  .tab button .tab:last-child button {
+    border-right: none; }
 
 .tablinks {
   color: #00685C;
@@ -248,8 +257,8 @@
   font-size: .7rem;
   width: auto; }
 
-.tablinks .lasttab {
-  border-left: solid #00685C 1px; }
+.tablinks:last-child {
+  border-right: none; }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -351,7 +360,7 @@ a.category__box:hover {
   position: relative;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: .5em;
   margin-top: -22px;
   color: #00685C;
   font-weight: bold;
@@ -433,3 +442,6 @@ a.category__box:hover {
     line-height: 1.5em;
     text-decoration: none;
     padding: 1em 1.5em; }
+    .footer__links a {
+      text-decoration: none;
+      color: #00685C; }

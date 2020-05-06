@@ -149,6 +149,7 @@ $body: 'Raleway', sans-serif;
 		}
 		li:last-child a {
 			margin-right: 0;
+			border-right:none;
 		}	
 	}
 }
@@ -299,6 +300,16 @@ $body: 'Raleway', sans-serif;
 		font-weight: bold;
 	}
 	
+	&__about {
+		border-top: solid $green 1px;
+		
+		p {
+			padding: 1em;
+			font-family: $sans;
+			color: $green;
+		}
+	}
+	
 }
 
 /* Style the tab */
@@ -325,7 +336,11 @@ $body: 'Raleway', sans-serif;
 	background-color: white;
 	width: auto;
 	flex-grow: 1;
-	border-left: .5px solid $green;
+	border-right: .5px solid $green;
+	
+	.tab:last-child button{
+		border-right: none;
+	}
 }
 
 .tablinks {
@@ -336,9 +351,10 @@ $body: 'Raleway', sans-serif;
 	width: auto;
 }
 
-.tablinks .lasttab {
-	border-left: solid $green 1px;
+.tablinks:last-child {
+	border-right: none;
 }
+
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -476,7 +492,7 @@ a.category__box:hover {
   position: relative;
   top: 50%;
   width: auto;
-  padding: 16px;
+  padding: .5em;
   margin-top: -22px;
   color: $green;
   font-weight: bold;
@@ -581,6 +597,11 @@ a.category__box:hover {
 		line-height: 1.5em;
 		text-decoration: none;
 		padding: 1em 1.5em;
+		
+		a {
+			text-decoration:none;
+			color: $green;
+		}
 	}
 	
 
