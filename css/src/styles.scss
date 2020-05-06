@@ -253,7 +253,7 @@ $body: 'Raleway', sans-serif;
 
 
 .site {
-	min-width: 100vw;
+	width: 100vw;
 	min-height: 10em;
 	top: calc(100vh - 3em);
 	background-color: white;
@@ -322,6 +322,7 @@ $body: 'Raleway', sans-serif;
 	flex-wrap: wrap;
 	align-content: stretch;
 	justify-content: stretch;
+	
 }
 
 
@@ -372,6 +373,7 @@ $body: 'Raleway', sans-serif;
   	display: none;
   	border-top: none;
 	border-bottom: solid $green 1px;
+	
 }
 
 .category {
@@ -402,6 +404,28 @@ $body: 'Raleway', sans-serif;
 
 a.category__box:hover {
 	background-color: $lightgreen;
+}
+
+.grid {
+	
+	&__container {
+		width: 100%;
+		background-color: blue;
+		display: inline-flex;
+		flex-wrap: wrap;
+		
+		div:nth-child(even) {
+			border-right: none;
+		}
+		
+	}
+	&__item {
+		width: 50%;
+		background-color: yellow;
+		border-right: solid $green 1px;
+		border-bottom: solid $green 1px;
+		
+	}
 }
 
 

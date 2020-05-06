@@ -186,7 +186,7 @@
   height: 1.5px; 
 }*/
 .site {
-  min-width: 100vw;
+  width: 100vw;
   min-height: 10em;
   top: calc(100vh - 3em);
   background-color: white;
@@ -296,6 +296,19 @@
 
 a.category__box:hover {
   background-color: #5EB34B; }
+
+.grid__container {
+  width: 100%;
+  background-color: blue;
+  display: inline-flex;
+  flex-wrap: wrap; }
+  .grid__container div:nth-child(even) {
+    border-right: none; }
+.grid__item {
+  width: 50%;
+  background-color: yellow;
+  border-right: solid #00685C 1px;
+  border-bottom: solid #00685C 1px; }
 
 .info__container {
   flex-wrap: wrap;
