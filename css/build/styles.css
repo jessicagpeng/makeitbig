@@ -187,13 +187,15 @@
 }*/
 .site {
   width: 100vw;
-  min-height: 10em;
+  min-height: 30em;
   top: calc(100vh - 3em);
   background-color: white;
   border: solid #00685C 1px;
   border-top: none; }
   .site__intro {
-    padding: 1em; }
+    padding: 1em;
+    max-width: 50em;
+    margin: 0 auto; }
     .site__intro__text {
       color: #00685C;
       font-family: "doyle", serif;
@@ -482,6 +484,7 @@ a.category__box:hover {
   .footer__links {
     color: #00685C;
     font-family: "cinetype", sans-serif;
+    font-size: .9em;
     font-weight: 400;
     line-height: 1.5em;
     text-decoration: none;
