@@ -1,4 +1,10 @@
 /* Scss Document */
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+img {vertical-align: middle;}
+
+
+
 
 /* Variables */
 /* COLORS */
@@ -11,10 +17,40 @@ $yellow: #FFE41B;
 
 /* FONTS */
 
-$display: 'Suez One', serif; /*will be Doyle*/
-$sans: 'Raleway', sans-serif; /*will be Cinetype*/
+$display: 'doyle', serif; /*will be Doyle*/
+$sans: 'cinetype', sans-serif; /*will be Cinetype*/
 $body: 'Raleway', sans-serif;
 
+@font-face {
+	font-family: "doyle";
+	src: url('../../fonts/Doyle-Bold.woff') format('woff'), url('../../fonts/Doyle-Bold.woff2');
+}
+@font-face {
+	font-family: "doyle-bolditalic";
+	src: url('../../fonts/Doyle-BoldItalic.woff') format('woff'), url('../../fonts/Doyle-BoldItalic.woff2');
+	font-style: italic;
+}
+@font-face {
+	font-family: "doyle-black";
+	src: url('../../fonts/Doyle-Black.woff') format('woff'), url('../../fonts/Doyle-Black.woff2');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "doyle-blackitalic";
+	src: url('../../fonts/Doyle-BlackItalic.woff') format('woff'), url('../../fonts/Doyle-BlackItalic.woff2');
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: "cinetype";
+	src: url("../../fonts/GT-Cinetype-Bold.woff") format('woff');
+	font-weight: bold;
+}
+@font-face {
+	font-family: "cinetype";
+	src: url("../../fonts/GT-Cinetype-Regular.woff") format('woff');
+	font-weight: normal;
+}
 
 /* logo */
 .site-logo {
@@ -261,9 +297,10 @@ $body: 'Raleway', sans-serif;
 	
 	&__name {
 		color: $green;
-		font-family: $sans;
+		font-family: 'cinetype', sans-serif;
 		font-size: 1em;
 		text-align: center;
+		font-weight: bold;
 	}
 	
 }
@@ -273,11 +310,11 @@ $body: 'Raleway', sans-serif;
  	width: 100%;
   	border-top: 1px solid $green;
 	border-bottom: 1px solid $green;
- 	background-color: red;
+ 	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
-	justify-content: center;
+	align-content: stretch;
+	justify-content: stretch;
 }
 
 
@@ -289,8 +326,10 @@ $body: 'Raleway', sans-serif;
 	cursor: pointer;
 	padding: .75em;
 	transition: 0s;
-	background-color: aqua;
+	background-color: white;
 	width: auto;
+	flex-grow: 1;
+	border-left: .5px solid $green;
 }
 
 .tablinks {
@@ -298,7 +337,6 @@ $body: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-family: $sans;
 	font-size: .7rem;
-	border-left: 1px solid $green;
 	width: auto;
 }
 
@@ -354,18 +392,173 @@ a.category__box:hover {
 	background-color: $lightgreen;
 }
 
-.hello {
-	display: flex;
-	align-content: center;
-	justify-content: space-between;
-	flex-direction: row;
+
+.info {
+	&__container {
+		flex-wrap: wrap;
+		background-color: white;
+		font-family: $sans;
+		color: $green;
+		
+		h3 {
+			font-weight: 800;
+			font-size: .8em;
+		}
+		p {
+			font-size: .9em;
+		}
+	}
+	
+	&__left {
+		width: 100%;
+		height: 100%;
+		padding: .5em;
+	}
+	&__right {
+		width: 100%;
+		height: 100%;
+		padding: 1em;
+		border-bottom: .5px solid $green;
+	}
+	&__question {
+		border: .5px solid $green;
+		padding: .5em;
+	}
+	&__answer {
+		padding: .5em;
+		margin-bottom: .3em;
+	}
+	&__interview {
+		margin-bottom: .8em;
+		h3 {
+			font-size: 1em;
+		}
+	}
+	&__longresponse {
+		margin-bottom: .5em;
+		line-height: 125%;
+	}
 }
 
-.try {
-	background-color: yellow;
-	padding: .5em;
-	flex-grow: 1;
+.proj {
+	&__images {
+		max-width: 1000px;
+  		position: relative;
+  		margin: auto;
+		display: flex;
+		border-bottom: solid $green 1px;
+		
+		&__left {
+			border-right: solid $green 1px;
+		}
+		&__right {
+			border-left: solid $green 1px;
+		}
+	}
+	&__text {
+		padding: 1em;
+		border-top: solid $green 1px;
+		
+		p {
+			font-family: $sans;
+			color: $green;
+			font-size: .9em;
+		}
+	}
 }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: $green;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.proj__images__left:hover, .proj__images__right:hover {
+  background-color: $beige;
+}
+
+/* The dots/bullets/indicators */
+.dot1.dot2.dot3.dot4 {
+  	cursor: pointer;
+  	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: white;
+  	border-radius: 50%;
+	border: solid $green 1px;
+  display: inline-block;
+  transition: 0s;
+}
+
+.active, .dot1:hover {
+  background-color: $lightgreen;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/*new attempt*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+
+
 
 /* footer */
 .footer {

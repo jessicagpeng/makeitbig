@@ -1,9 +1,42 @@
 /* Scss Document */
+* {
+  box-sizing: border-box; }
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
+  display: none; }
+
+img {
+  vertical-align: middle; }
+
 /* Variables */
 /* COLORS */
 /* FONTS */
 /*will be Doyle*/
 /*will be Cinetype*/
+@font-face {
+  font-family: "doyle";
+  src: url("../../fonts/Doyle-Bold.woff") format("woff"), url("../../fonts/Doyle-Bold.woff2"); }
+@font-face {
+  font-family: "doyle-bolditalic";
+  src: url("../../fonts/Doyle-BoldItalic.woff") format("woff"), url("../../fonts/Doyle-BoldItalic.woff2");
+  font-style: italic; }
+@font-face {
+  font-family: "doyle-black";
+  src: url("../../fonts/Doyle-Black.woff") format("woff"), url("../../fonts/Doyle-Black.woff2");
+  font-weight: bold; }
+@font-face {
+  font-family: "doyle-blackitalic";
+  src: url("../../fonts/Doyle-BlackItalic.woff") format("woff"), url("../../fonts/Doyle-BlackItalic.woff2");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: "cinetype";
+  src: url("../../fonts/GT-Cinetype-Bold.woff") format("woff");
+  font-weight: bold; }
+@font-face {
+  font-family: "cinetype";
+  src: url("../../fonts/GT-Cinetype-Regular.woff") format("woff");
+  font-weight: normal; }
 /* logo */
 .site-logo {
   display: flex; }
@@ -19,7 +52,7 @@
 .site-title-link {
   color: #00685C;
   text-decoration: none;
-  font-family: "Suez One", serif;
+  font-family: "doyle", serif;
   letter-spacing: .12em; }
 
 .site-title {
@@ -65,7 +98,7 @@
       padding: 0;
       height: 100%; } }
   .primary-nav a {
-    font-family: "Suez One", serif;
+    font-family: "doyle", serif;
     letter-spacing: .1em;
     display: block;
     text-decoration: none;
@@ -172,7 +205,7 @@
   border-top: none; }
   .site__intro__text {
     color: #00685C;
-    font-family: "Suez One", serif;
+    font-family: "doyle", serif;
     font-size: 3em;
     text-align: center; }
   .site__title {
@@ -185,25 +218,26 @@
       padding: 1em; }
   .site__headline {
     color: #00685C;
-    font-family: "Suez One", serif;
+    font-family: "doyle", serif;
     font-size: 1.5em;
     text-align: left; }
   .site__name {
     color: #00685C;
-    font-family: "Raleway", sans-serif;
+    font-family: 'cinetype', sans-serif;
     font-size: 1em;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
 
 /* Style the tab */
 .tab {
   width: 100%;
   border-top: 1px solid #00685C;
   border-bottom: 1px solid #00685C;
-  background-color: red;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center; }
+  align-content: stretch;
+  justify-content: stretch; }
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -212,15 +246,16 @@
   cursor: pointer;
   padding: .75em;
   transition: 0s;
-  background-color: aqua;
-  width: auto; }
+  background-color: white;
+  width: auto;
+  flex-grow: 1;
+  border-left: 0.5px solid #00685C; }
 
 .tablinks {
   color: #00685C;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: "cinetype", sans-serif;
   font-size: .7rem;
-  border-left: 1px solid #00685C;
   width: auto; }
 
 .tablinks .lasttab {
@@ -256,23 +291,138 @@
     align-content: center;
     justify-content: center;
     text-decoration: none;
-    font-family: "Raleway", sans-serif;
+    font-family: "cinetype", sans-serif;
     color: #00685C;
     padding: 1em; }
 
 a.category__box:hover {
   background-color: #5EB34B; }
 
-.hello {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  flex-direction: row; }
-
-.try {
-  background-color: yellow;
+.info__container {
+  flex-wrap: wrap;
+  background-color: white;
+  font-family: "cinetype", sans-serif;
+  color: #00685C; }
+  .info__container h3 {
+    font-weight: 800;
+    font-size: .8em; }
+  .info__container p {
+    font-size: .9em; }
+.info__left {
+  width: 100%;
+  height: 100%;
+  padding: .5em; }
+.info__right {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  border-bottom: 0.5px solid #00685C; }
+.info__question {
+  border: 0.5px solid #00685C;
+  padding: .5em; }
+.info__answer {
   padding: .5em;
-  flex-grow: 1; }
+  margin-bottom: .3em; }
+.info__interview {
+  margin-bottom: .8em; }
+  .info__interview h3 {
+    font-size: 1em; }
+.info__longresponse {
+  margin-bottom: .5em;
+  line-height: 125%; }
+
+.proj__images {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  border-bottom: solid #00685C 1px; }
+  .proj__images__left {
+    border-right: solid #00685C 1px; }
+  .proj__images__right {
+    border-left: solid #00685C 1px; }
+.proj__text {
+  padding: 1em;
+  border-top: solid #00685C 1px; }
+  .proj__text p {
+    font-family: "cinetype", sans-serif;
+    color: #00685C;
+    font-size: .9em; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #00685C;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.proj__images__left:hover, .proj__images__right:hover {
+  background-color: #FFF7E3; }
+
+/* The dots/bullets/indicators */
+.dot1.dot2.dot3.dot4 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid #00685C 1px;
+  display: inline-block;
+  transition: 0s; }
+
+.active, .dot1:hover {
+  background-color: #5EB34B; }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px; } }
+/*new attempt*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black; }
 
 /* footer */
 .footer {
@@ -285,7 +435,7 @@ a.category__box:hover {
   display: flex; }
   .footer__links {
     color: #00685C;
-    font-family: "Raleway", sans-serif;
+    font-family: "cinetype", sans-serif;
     font-weight: 400;
     line-height: 1.5em;
     text-decoration: none; }
