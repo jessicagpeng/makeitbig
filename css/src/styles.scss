@@ -266,6 +266,7 @@ $body: 'Raleway', sans-serif;
 		max-width: 50em;
 		margin: 0 auto;
 		
+		
 		@media (min-width: 65rem) {
 			max-width: 65em;
 		}
@@ -273,8 +274,13 @@ $body: 'Raleway', sans-serif;
 		&__text {
 			color: $green;
 			font-family: $display;
-			font-size: 3em;
+			font-size: 2.5em;
 			text-align: center;
+			
+			
+			@media (min-width: 45rem) {
+				font-size: 3em;
+			}
 		}
 	}
 	
@@ -445,6 +451,9 @@ a.category__box:hover {
 		background-color: blue;
 		display: inline-flex;
 		flex-wrap: wrap;
+		align-content: stretch;
+		align-items: stretch;
+		justify-content: space-between;
 		
 		div:nth-child(even) {
 			border-right: none;
@@ -456,6 +465,14 @@ a.category__box:hover {
 		background-color: yellow;
 		border-right: solid $green 1px;
 		border-bottom: solid $green 1px;
+		
+		@media (min-width: 40rem) {
+			width: 33.333%;
+		}
+		
+		@media (min-width: 45rem) {
+			width: 25%;
+		}
 		
 	}
 }
@@ -604,6 +621,7 @@ a.category__box:hover {
 		
 		@media (min-width: 40rem) {
 			width: 35%;
+			border-top: none;
 		}
 		
 		h3 {
@@ -612,12 +630,20 @@ a.category__box:hover {
 			font-size: .8em;
 			margin-bottom: .5em;
 			font-weight: bold;
+			
+			@media (min-width: 40rem) {
+				font-size: .9em;
+			}
 		}
 		p {
 			font-family: $sans;
 			color: $green;
 			font-size: .8em;
 			margin-bottom: .5em;
+			
+			@media (min-width: 40rem) {
+				font-size: .9em;
+			}
 		}
 	}
 }
