@@ -4,6 +4,7 @@
 /* FONTS */
 /*will be Doyle*/
 /*will be Cinetype*/
+/* BORDERS */
 @font-face {
   font-family: "doyle";
   src: url("../../fonts/Doyle-Bold.woff") format("woff"), url("../../fonts/Doyle-Bold.woff2"); }
@@ -190,8 +191,8 @@
   min-height: 30em;
   top: calc(100vh - 3em);
   background-color: white;
-  border: solid #00685C 1px;
-  border-top: none; }
+  /*border: $border;
+  border-top: none;*/ }
   .site__intro {
     padding: 1em;
     max-width: 50em;
@@ -210,16 +211,21 @@
   .site__title {
     width: 100%;
     height: 4em;
-    padding: 1em; }
+    padding: 1em;
+    border: solid #00685C 1px;
+    border-top: none;
+    border-bottom: none; }
     .site__title__name {
       width: 100%;
       height: 3em;
-      padding: 1em; }
+      padding: 1em;
+      border-left: solid #00685C 1px;
+      border-right: solid #00685C 1px; }
   .site__headline {
     color: #00685C;
     font-family: "doyle", serif;
     font-size: 1.5em;
-    text-align: left; }
+    text-align: center; }
   .site__name {
     color: #00685C;
     font-family: 'cinetype', sans-serif;
@@ -227,7 +233,8 @@
     text-align: center;
     font-weight: bold; }
   .site__about {
-    border-top: solid #00685C 1px; }
+    border: solid #00685C 1px;
+    height: 90vh; }
     .site__about p {
       padding: 1em;
       font-family: "cinetype", sans-serif;
@@ -253,8 +260,7 @@
 /* Style the tab */
 .tab {
   width: 100%;
-  border-top: 1px solid #00685C;
-  border-bottom: 1px solid #00685C;
+  border: 1px solid #00685C;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -304,9 +310,8 @@
   display: flex; }
   .category__container {
     display: flex;
-    flex-wrap: wrap; }
-    .category__container a:nth-child(even) {
-      border-right: none; }
+    flex-wrap: wrap;
+    border-left: solid #00685C 1px; }
   .category__box {
     min-width: 50%;
     height: 5em;
@@ -331,7 +336,9 @@ a.category__box:hover {
   flex-wrap: wrap;
   align-content: stretch;
   align-items: stretch;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-left: solid #00685C 1px;
+  border-right: solid #00685C 1px; }
   .grid__container div:nth-child(even) {
     border-right: none; }
 .grid__item {
@@ -376,7 +383,9 @@ a.category__box:hover {
 .info__container {
   background-color: white;
   font-family: "cinetype", sans-serif;
-  color: #00685C; }
+  color: #00685C;
+  border-right: solid #00685C 1px;
+  border-left: solid #00685C 1px; }
   .info__container h3 {
     font-weight: 800;
     font-size: .8em; }
@@ -419,11 +428,14 @@ a.category__box:hover {
   margin-bottom: .5em;
   line-height: 125%; }
 
-@media (min-width: 40rem) {
-  .proj__container {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap; } }
+.proj__container {
+  border-right: solid #00685C 1px;
+  border-left: solid #00685C 1px; }
+  @media (min-width: 40rem) {
+    .proj__container {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap; } }
 .proj__images {
   max-width: 100%;
   position: relative;
@@ -510,19 +522,19 @@ a.category__box:hover {
 .active, .dot1:hover {
   background-color: #5EB34B; }
 
-.tags {
-  border: solid #00685C 1px;
-  border-bottom: none; }
-  .tags__container {
-    width: 100%;
-    background-color: white;
-    padding: 1em; }
-    .tags__container a {
-      font-family: "cinetype", sans-serif;
-      color: #00685C;
-      padding: 1em;
-      text-decoration: none;
-      font-weight: bold; }
+.tags__container {
+  width: 100%;
+  background-color: white;
+  padding: 1em;
+  border-right: solid #00685C 1px;
+  border-left: solid #00685C 1px;
+  border-bottom: solid #00685C 1px; }
+  .tags__container a {
+    font-family: "cinetype", sans-serif;
+    color: #00685C;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: bold; }
 
 .tag {
   border: solid 1px #00685C;

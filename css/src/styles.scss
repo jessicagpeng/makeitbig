@@ -19,6 +19,10 @@ $display: 'doyle', serif; /*will be Doyle*/
 $sans: 'cinetype', sans-serif; /*will be Cinetype*/
 $body: 'Raleway', sans-serif;
 
+/* BORDERS */
+
+$border: solid $green 1px;
+
 @font-face {
 	font-family: "doyle";
 	src: url('../../fonts/Doyle-Bold.woff') format('woff'), url('../../fonts/Doyle-Bold.woff2');
@@ -110,7 +114,7 @@ $body: 'Raleway', sans-serif;
 		top:0em;
 		right:0;
 		font-size: .8em;
-		border-left: solid $green 1px;
+		border-left: $border;
 		background-color: $beige;
 		color: $green;
 		padding: 0;
@@ -129,7 +133,7 @@ $body: 'Raleway', sans-serif;
 		
 		@media (min-width: 45rem){
 			color: $green;
-			border-right: solid $green 1px;
+			border-right: $border;
 			height: 105%;
 		}
 	}
@@ -257,8 +261,8 @@ $body: 'Raleway', sans-serif;
 	min-height: 30em;
 	top: calc(100vh - 3em);
 	background-color: white;
-	border: solid $green 1px;
-	border-top: none;
+	/*border: $border;
+	border-top: none;*/
 	
 	
 	&__intro {
@@ -288,11 +292,16 @@ $body: 'Raleway', sans-serif;
 		width: 100%;
 		height: 4em;
 		padding: 1em;
+		border: $border;
+		border-top: none;
+		border-bottom: none;
 		
 		&__name {
 			width: 100%;
 			height: 3em;
 			padding: 1em;
+			border-left: $border;
+			border-right: $border;
 			
 		}
 	}
@@ -301,7 +310,8 @@ $body: 'Raleway', sans-serif;
 		color: $green;
 		font-family: $display;
 		font-size: 1.5em;
-		text-align: left;
+		text-align: center;
+		
 	}
 	
 	&__name {
@@ -313,7 +323,8 @@ $body: 'Raleway', sans-serif;
 	}
 	
 	&__about {
-		border-top: solid $green 1px;
+		border: $border;
+		height: 90vh;
 		
 		p {
 			padding: 1em;
@@ -323,7 +334,7 @@ $body: 'Raleway', sans-serif;
 	}
 	
 	&__students {
-		border-top: solid $green 1px;
+		border-top: $border;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
@@ -335,12 +346,12 @@ $body: 'Raleway', sans-serif;
 	&__class {
 		background-color: white;
 		width: auto;
-		border-bottom: solid $green 1px;
+		border-bottom: $border;
 		padding: 1em;
 		
 		@media (min-width: 30rem) {
 			width: 50%;
-			border-right: solid $green 1px;
+			border-right: $border;
 		}
 		
 	}
@@ -350,8 +361,7 @@ $body: 'Raleway', sans-serif;
 /* Style the tab */
 .tab {
  	width: 100%;
-  	border-top: 1px solid $green;
-	border-bottom: 1px solid $green;
+	border: 1px solid $green;
  	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
@@ -407,7 +417,7 @@ $body: 'Raleway', sans-serif;
 .tabcontent {
   	display: none;
   	border-top: none;
-	border-bottom: solid $green 1px;
+	border-bottom: $border;
 	
 }
 
@@ -418,9 +428,7 @@ $body: 'Raleway', sans-serif;
 	&__container {
 		display: flex;
 		flex-wrap: wrap;
-		a:nth-child(even) {
-			border-right: none;
-		}
+		border-left: $border;
 	}
 	
 	&__box {
@@ -454,6 +462,8 @@ a.category__box:hover {
 		align-content: stretch;
 		align-items: stretch;
 		justify-content: space-between;
+		border-left: $border;
+		border-right: $border;
 		
 		div:nth-child(even) {
 			border-right: none;
@@ -463,8 +473,8 @@ a.category__box:hover {
 	&__item {
 		width: 50%;
 		background-color: yellow;
-		border-right: solid $green 1px;
-		border-bottom: solid $green 1px;
+		border-right: $border;
+		border-bottom: $border;
 		
 		@media (min-width: 40rem) {
 			width: 33.333%;
@@ -483,7 +493,7 @@ a.category__box:hover {
 	font-weight: bold;
 	color: $green;
 	padding: .5em;
-	border: solid $green 1px;
+	border: $border;
 	margin-bottom: .5em;
 	
 	
@@ -522,6 +532,8 @@ a.category__box:hover {
 		background-color: white;
 		font-family: $sans;
 		color: $green;
+		border-right: $border;
+		border-left: $border;
 		
 		h3 {
 			font-weight: 800;
@@ -584,11 +596,14 @@ a.category__box:hover {
 
 .proj {
 	&__container{
+		border-right: $border;
+		border-left: $border;
+		
 		@media (min-width: 40rem) {
-		display: flex;
-		flex-flow: row;
-		flex-wrap: wrap;
-	}
+			display: flex;
+			flex-flow: row;
+			flex-wrap: wrap;
+		}
 	}
 	
 	
@@ -604,20 +619,20 @@ a.category__box:hover {
 		}
 		
 		&__left {
-			border-right: solid $green 1px;
+			border-right: $border;
 
 		}
 		&__right {
-			border-left: solid $green 1px;
+			border-left: $border;
 			
 			@media (min-width: 40rem) {
-				border-right: solid $green 1px;
+				border-right: $border;
 			}
 		}
 	}
 	&__text {
 		padding: 1em;
-		border-top: solid $green 1px;
+		border-top: $border;
 		
 		@media (min-width: 40rem) {
 			width: 35%;
@@ -690,7 +705,7 @@ a.category__box:hover {
   	margin: 0 4px;
   	background-color: white;
   	border-radius: 50%;
-	border: solid $green 1px;
+	border: $border;
   	display: inline-block;
   	transition: 0s;
 }
@@ -701,13 +716,16 @@ a.category__box:hover {
 
 
 .tags {
-		border: solid $green 1px;
-		border-bottom: none;
+		
 	
 	&__container {
 		width: 100%;
 		background-color: white;
 		padding: 1em;
+		border-right: $border;
+		border-left: $border;
+		border-bottom: $border;
+		
 
 		
 		a {
@@ -731,7 +749,7 @@ a.category__box:hover {
 	height: 100%;
 	width: 100vw;
 	background-color: $beige;
-	border: solid $green 1px;
+	border: $border;
 	border-top: none;
 	display: flex;
 	flex-wrap: wrap;
