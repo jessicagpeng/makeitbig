@@ -267,13 +267,16 @@ $border: solid $green 1px;
 	
 	&__intro {
 		padding: 1em;
-		max-width: 50em;
+		max-width: 100%;
+		height: 60em;
 		margin: 0 auto;
+		border: $border;
+		border-top: none;
 		
 		
-		@media (min-width: 65rem) {
+		/*@media (min-width: 65rem) {
 			max-width: 65em;
-		}
+		}*/
 			
 		&__text {
 			color: $green;
@@ -338,22 +341,36 @@ $border: solid $green 1px;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
+		width: 100%;
+		border-left: $border;
+		border-right: $border;
 		
 		@media (min-width: 30rem) {
-			height: 75rem;
+			
+			border-right: none;
 		}
+		
 	}
 	&__class {
 		background-color: white;
 		width: auto;
 		border-bottom: $border;
 		padding: 1em;
+		width: 100%;
 		
 		@media (min-width: 30rem) {
 			width: 50%;
 			border-right: $border;
 		}
-		
+		@media (min-width: 50rem) {
+			padding: 1.5em;
+		}
+		@media (min-width: 70rem) {
+			padding: 2em;
+		}
+		@media (min-width: 90rem) {
+			padding: 2.5em;
+		}
 	}
 	
 }
@@ -502,7 +519,6 @@ a.category__box:hover {
 		flex-wrap: wrap;
 		flex-direction: row;
 		
-		
 	}
 	
 	&__names {
@@ -524,6 +540,14 @@ a.category__box:hover {
 	a {
 		text-decoration: underline;
 		color: $green;
+	}
+}
+
+.blank {
+	display: none;
+	
+	@media (min-width: 30rem) {
+		display:block;
 	}
 }
 

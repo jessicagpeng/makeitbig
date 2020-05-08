@@ -195,11 +195,14 @@
   border-top: none;*/ }
   .site__intro {
     padding: 1em;
-    max-width: 50em;
-    margin: 0 auto; }
-    @media (min-width: 65rem) {
-      .site__intro {
-        max-width: 65em; } }
+    max-width: 100%;
+    height: 60em;
+    margin: 0 auto;
+    border: solid #00685C 1px;
+    border-top: none;
+    /*@media (min-width: 65rem) {
+    	max-width: 65em;
+    }*/ }
     .site__intro__text {
       color: #00685C;
       font-family: "doyle", serif;
@@ -243,19 +246,32 @@
     border-top: solid #00685C 1px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; }
+    flex-direction: row;
+    width: 100%;
+    border-left: solid #00685C 1px;
+    border-right: solid #00685C 1px; }
     @media (min-width: 30rem) {
       .site__students {
-        height: 75rem; } }
+        border-right: none; } }
   .site__class {
     background-color: white;
     width: auto;
     border-bottom: solid #00685C 1px;
-    padding: 1em; }
+    padding: 1em;
+    width: 100%; }
     @media (min-width: 30rem) {
       .site__class {
         width: 50%;
         border-right: solid #00685C 1px; } }
+    @media (min-width: 50rem) {
+      .site__class {
+        padding: 1.5em; } }
+    @media (min-width: 70rem) {
+      .site__class {
+        padding: 2em; } }
+    @media (min-width: 90rem) {
+      .site__class {
+        padding: 2.5em; } }
 
 /* Style the tab */
 .tab {
@@ -379,6 +395,12 @@ a.category__box:hover {
   .names a {
     text-decoration: underline;
     color: #00685C; }
+
+.blank {
+  display: none; }
+  @media (min-width: 30rem) {
+    .blank {
+      display: block; } }
 
 .info__container {
   background-color: white;
