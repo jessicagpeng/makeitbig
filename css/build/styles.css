@@ -188,15 +188,13 @@
 }*/
 .site {
   width: 100vw;
-  min-height: 30em;
+  height: 100%;
   top: calc(100vh - 3em);
   background-color: white;
   /*border: $border;
   border-top: none;*/ }
   .site__intro {
-    padding: 1em;
     max-width: 100%;
-    height: 60em;
     margin: 0 auto;
     border: solid #00685C 1px;
     border-top: none;
@@ -279,7 +277,80 @@
       .site__class {
         padding: 2.5em; } }
 
+/* HOME */
+.background-image {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../images/home_bg-02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 /* TABS */
+/*
+.tab {
+ 	width: 100%;
+	border: 1px solid $green;
+ 	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	justify-content: stretch;
+	
+}
+
+.tab button {
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	padding: .75em;
+	transition: 0s;
+	background-color: white;
+	width: auto;
+	flex-grow: 1;
+	border-right: .5px solid $green;
+	
+	.tab:last-child button{
+		border-right: none;
+	}
+}
+
+.tablinks {
+	color: $green;
+	text-transform: uppercase;
+	font-family: $sans;
+	font-size: .7rem;
+	width: auto;
+	
+	@media (min-width: 45rem) {
+		font-size: .8rem;
+	}
+}
+
+.tablinks:last-child {
+	border-right: none;
+}
+
+
+/* Change background color of buttons on hover */
+/*.tab button:hover {
+	background-color: $beige;
+}
+
+/* Create an active/current tablink class */
+/*.tab button.active {
+  	background-color: $lightgreen;
+	color: $beige;
+}
+
+/* Style the tab content */
+/*.tabcontent {
+  	display: none;
+  	border-top: none;
+}
+
+/* NEW ATTEMPT */
+/* Style tab links */
 .tab {
   width: 100%;
   border: 1px solid #00685C;
@@ -288,46 +359,37 @@
   flex-wrap: wrap;
   align-content: stretch;
   justify-content: stretch; }
-
-.tab button {
-  background-color: inherit;
-  border: none;
-  cursor: pointer;
-  padding: .75em;
-  transition: 0s;
-  background-color: white;
-  width: auto;
-  flex-grow: 1;
-  border-right: 0.5px solid #00685C; }
-  .tab button .tab:last-child button {
+  .tab button:last-child {
     border-right: none; }
 
-.tablinks {
+.tablink {
+  background-color: white;
   color: #00685C;
-  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  width: 20%;
   font-family: "cinetype", sans-serif;
+  text-transform: uppercase;
   font-size: .7rem;
-  width: auto; }
+  padding: 1em;
+  border-right: solid #00685C 1px; }
   @media (min-width: 45rem) {
-    .tablinks {
+    .tablink {
       font-size: .8rem; } }
 
-.tablinks:last-child {
-  border-right: none; }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
+.tablink:hover {
   background-color: #FFF7E3; }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #FFF7E3;
-  color: #0198BD; }
+.tablink:active {
+  background-color: #5EB34B; }
 
-/* Style the tab content */
+/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  display: none;
-  border-top: none; }
+  display: block;
+  background-color: white;
+  height: 100%;
+  border-left: solid #00685C 1px;
+  border-right: solid #00685C 1px; }
 
 /* WORK */
 .category {
@@ -354,6 +416,9 @@
     @media (min-width: 45rem) {
       .category__box {
         width: 25%; } }
+    @media (min-width: 85rem) {
+      .category__box {
+        width: 12.5%; } }
 
 a.category__box:hover {
   background-color: #5EB34B; }
@@ -365,7 +430,7 @@ a.category__box:hover {
   flex-wrap: wrap;
   align-content: stretch;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: flex-start;
   border-left: solid #00685C 1px; }
 .grid__item {
   width: 50%;
@@ -378,6 +443,12 @@ a.category__box:hover {
   @media (min-width: 45rem) {
     .grid__item {
       width: 25%; } }
+  @media (min-width: 60rem) {
+    .grid__item {
+      width: 16.66666%; } }
+  @media (min-width: 85rem) {
+    .grid__item {
+      width: 12.5%; } }
 
 /* STUDENTS */
 .class {
@@ -419,7 +490,8 @@ a.category__box:hover {
   font-family: "cinetype", sans-serif;
   color: #00685C;
   border-right: solid #00685C 1px;
-  border-left: solid #00685C 1px; }
+  border-left: solid #00685C 1px;
+  border-bottom: solid #00685C 1px; }
   .info__container h3 {
     font-weight: 800;
     font-size: .8em; }
@@ -464,7 +536,8 @@ a.category__box:hover {
 
 .proj__container {
   border-right: solid #00685C 1px;
-  border-left: solid #00685C 1px; }
+  border-left: solid #00685C 1px;
+  border-bottom: solid #00685C 1px; }
   @media (min-width: 40rem) {
     .proj__container {
       display: flex;
