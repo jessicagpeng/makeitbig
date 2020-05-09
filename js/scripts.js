@@ -23,7 +23,7 @@ $(document).ready(function(){
 });
 
 
-// Template Page Tabs // 
+// Template Page Tabs */ 
 
 function openPage(pageName,elmnt) {
   var i, tabcontent, tablinks;
