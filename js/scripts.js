@@ -23,23 +23,7 @@ $(document).ready(function(){
 });
 
 
-
-/*function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}*/
-
-
-/* tabs */ 
+// Template Page Tabs // 
 
 function openPage(pageName,elmnt) {
   var i, tabcontent, tablinks;
@@ -61,7 +45,7 @@ document.getElementById("defaultOpen").click();
 
 
 
-/* Image Slideshow */
+// Template Image Slideshow //
 
 var slideIndex = [1,1,2,3];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
@@ -86,7 +70,7 @@ function showSlides(n, no) {
 }
 
 
-/* Work Filter */
+// Work Page Image Filter //
 
 filterSelection("all")
 function filterSelection(c) {
@@ -133,7 +117,7 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
-
+// Work Page Tabs //
 
 function toggleWork(evt, cityName) {
   var i, workcontent, worklink;

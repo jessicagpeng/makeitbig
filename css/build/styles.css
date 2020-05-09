@@ -29,6 +29,9 @@
   font-family: "cinetype";
   src: url("../../fonts/GT-Cinetype-Regular.woff") format("woff");
   font-weight: normal; }
+html, body {
+  height: 100%; }
+
 /* logo */
 .site-logo {
   display: flex; }
@@ -182,10 +185,6 @@
 .show-menu .primary-nav {
   display: block; }
 
-/*.nav-underline {
-  background-color: white;
-  height: 1.5px; 
-}*/
 .site {
   width: 100vw;
   height: 100%;
@@ -195,6 +194,7 @@
   border-top: none;*/ }
   .site__intro {
     max-width: 100%;
+    height: 100%;
     margin: 0 auto;
     border: solid #00685C 1px;
     border-top: none;
@@ -279,6 +279,7 @@
 
 /* HOME */
 .background-image {
+  display: flex;
   background-image: url("../../images/home_bg-02.jpg");
   height: 100%;
   width: 100%;
@@ -297,7 +298,16 @@
   width: 5em;
   top: 20em; }
 
-/* NEW ATTEMPT */
+.logotitle__container {
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  top: 10em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 999; }
+
 /* Style tab links */
 .tab {
   width: 100%;
@@ -331,7 +341,6 @@
 .tablink:active {
   background-color: #5EB34B; }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   display: block;
   background-color: white;
@@ -373,7 +382,6 @@
 .worklink:active {
   background-color: #5EB34B; }
 
-/* Style the tab content (and add height:100% for full page content) */
 .workcontent {
   display: none;
   background-color: white;
@@ -438,12 +446,10 @@ a.category__box:hover {
     .grid__item {
       width: 12.5%; } }
 
-/* Create three equal columns that floats next to each other */
 .grid__item {
   float: left;
   width: 50%;
-  display: none;
-  /* Hide all elements by default */ }
+  display: none; }
   @media (min-width: 40rem) {
     .grid__item {
       width: 33.333%; } }
@@ -457,17 +463,13 @@ a.category__box:hover {
     .grid__item {
       width: 12.5%; } }
 
-/* Clear floats after rows */
-/* Content */
 .content {
   background-color: white;
   padding: 0; }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block; }
 
-/* Style the buttons */
 .filter {
   outline: none;
   padding: 12px 16px;
@@ -533,7 +535,7 @@ a.category__box:hover {
     .blank {
       display: block; } }
 
-/* STUDENT PAGE */
+/* STUDENT TEMPLATE PAGE */
 .info__container {
   background-color: white;
   font-family: "cinetype", sans-serif;
@@ -675,9 +677,9 @@ a.category__box:hover {
   display: inline-block;
   transition: 0s; }
 
-/*.active, .dot1:hover {
-  background-color: $lightgreen;
-}*/
+.active, .dot1:hover {
+  background-color: #5EB34B; }
+
 .tags__container {
   width: 100%;
   background-color: white;
@@ -705,7 +707,7 @@ a.category__box:hover {
   border-top: none;
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
+  position: relative;
   bottom: 0; }
   .footer__content {
     width: 100%; }
