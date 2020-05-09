@@ -39,6 +39,8 @@ $(document).ready(function(){
 }*/
 
 
+/* tabs */ 
+
 function openPage(pageName,elmnt) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -59,7 +61,7 @@ document.getElementById("defaultOpen").click();
 
 
 
-
+/* Image Slideshow */
 
 var slideIndex = [1,1,2,3];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
@@ -83,6 +85,78 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 
+
+/* Work Filter */
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("grid__item");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("filter");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+  });
+}
+
+
+
+
+function toggleWork(evt, cityName) {
+  var i, workcontent, worklink;
+    workcontent = document.getElementsByClassName("workcontent");
+   
+    worklink = document.getElementsByClassName("worklink");
+    for (i = 0; i < worklink.length; i++) {
+        worklink[i].className = worklink[i].className.replace("none", "");
+    }
+    var prev_state_display = document.getElementById(cityName).style.display;
+    
+    for (i = 0; i < workcontent.length; i++) {
+        workcontent[i].style.display = "active";
+    }
+    
+    if( prev_state_display === "none"){
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    } else {
+        document.getElementById(cityName).style.display = "none";
+        evt.currentTarget.className.replace(" active", "");
+    }
+}
 
 
 

@@ -279,75 +279,23 @@
 
 /* HOME */
 .background-image {
-  height: 100vh;
-  width: 100%;
   background-image: url("../../images/home_bg-02.jpg");
+  height: 100%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* TABS */
-/*
-.tab {
- 	width: 100%;
-	border: 1px solid $green;
- 	background-color: white;
-	display: flex;
-	flex-wrap: wrap;
-	align-content: stretch;
-	justify-content: stretch;
-	
-}
+.panel1 {
+  position: absolute;
+  width: 5em;
+  top: 4em; }
 
-.tab button {
-	background-color: inherit;
-	border: none;
-	cursor: pointer;
-	padding: .75em;
-	transition: 0s;
-	background-color: white;
-	width: auto;
-	flex-grow: 1;
-	border-right: .5px solid $green;
-	
-	.tab:last-child button{
-		border-right: none;
-	}
-}
-
-.tablinks {
-	color: $green;
-	text-transform: uppercase;
-	font-family: $sans;
-	font-size: .7rem;
-	width: auto;
-	
-	@media (min-width: 45rem) {
-		font-size: .8rem;
-	}
-}
-
-.tablinks:last-child {
-	border-right: none;
-}
-
-
-/* Change background color of buttons on hover */
-/*.tab button:hover {
-	background-color: $beige;
-}
-
-/* Create an active/current tablink class */
-/*.tab button.active {
-  	background-color: $lightgreen;
-	color: $beige;
-}
-
-/* Style the tab content */
-/*.tabcontent {
-  	display: none;
-  	border-top: none;
-}
+.panel2 {
+  position: absolute;
+  right: 0em;
+  width: 5em;
+  top: 20em; }
 
 /* NEW ATTEMPT */
 /* Style tab links */
@@ -392,13 +340,53 @@
   border-right: solid #00685C 1px; }
 
 /* WORK */
+.work {
+  width: 100%;
+  border: 1px solid #00685C;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: stretch;
+  overflow: hidden; }
+  .work button:last-child {
+    border-right: none; }
+
+.worklink {
+  background-color: white;
+  color: #00685C;
+  outline: none;
+  cursor: pointer;
+  width: 50%;
+  font-family: "cinetype", sans-serif;
+  text-transform: uppercase;
+  font-size: .7rem;
+  padding: 1em;
+  border-right: solid #00685C 1px; }
+  @media (min-width: 45rem) {
+    .worklink {
+      font-size: .8rem; } }
+
+.worklink:hover {
+  background-color: #FFF7E3; }
+
+.worklink:active {
+  background-color: #5EB34B; }
+
+/* Style the tab content (and add height:100% for full page content) */
+.workcontent {
+  display: none;
+  background-color: white;
+  height: 100%;
+  border-left: solid #00685C 1px; }
+
 .category {
   display: flex; }
   .category__container {
     display: flex;
     flex-wrap: wrap;
-    border-left: solid #00685C 1px;
-    border-left: solid #00685C 1px; }
+    width: 100%;
+    background-color: yellow; }
   .category__box {
     width: 50%;
     background-color: white;
@@ -426,7 +414,7 @@ a.category__box:hover {
 .grid__container {
   width: 100%;
   background-color: blue;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   align-content: stretch;
   align-items: stretch;
@@ -449,6 +437,67 @@ a.category__box:hover {
   @media (min-width: 85rem) {
     .grid__item {
       width: 12.5%; } }
+
+/* Create three equal columns that floats next to each other */
+.grid__item {
+  float: left;
+  width: 50%;
+  display: none;
+  /* Hide all elements by default */ }
+  @media (min-width: 40rem) {
+    .grid__item {
+      width: 33.333%; } }
+  @media (min-width: 45rem) {
+    .grid__item {
+      width: 25%; } }
+  @media (min-width: 60rem) {
+    .grid__item {
+      width: 16.66666%; } }
+  @media (min-width: 85rem) {
+    .grid__item {
+      width: 12.5%; } }
+
+/* Clear floats after rows */
+/* Content */
+.content {
+  background-color: white;
+  padding: 0; }
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block; }
+
+/* Style the buttons */
+.filter {
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  width: 50%;
+  border-bottom: solid #00685C 1px;
+  border-right: solid #00685C 1px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "cinetype", sans-serif;
+  color: #00685C; }
+  @media (min-width: 40rem) {
+    .filter {
+      width: 33.333%; } }
+  @media (min-width: 45rem) {
+    .filter {
+      width: 25%; } }
+  @media (min-width: 85rem) {
+    .filter {
+      width: 12.5%; } }
+
+.filter:hover {
+  background-color: #FFF7E3; }
+
+.filter:active {
+  background-color: #5EB34B;
+  color: white; }
 
 /* STUDENTS */
 .class {
@@ -626,9 +675,9 @@ a.category__box:hover {
   display: inline-block;
   transition: 0s; }
 
-.active, .dot1:hover {
-  background-color: #5EB34B; }
-
+/*.active, .dot1:hover {
+  background-color: $lightgreen;
+}*/
 .tags__container {
   width: 100%;
   background-color: white;
@@ -649,13 +698,15 @@ a.category__box:hover {
 
 /* footer */
 .footer {
-  height: 100%;
+  height: 10em;
   width: 100vw;
   background-color: #FFF7E3;
   border: solid #00685C 1px;
   border-top: none;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0; }
   .footer__content {
     width: 100%; }
   .footer__credit {
