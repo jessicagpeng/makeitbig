@@ -1,9 +1,5 @@
 /* Scss Document */
 
-
-
-
-
 /* Variables */
 /* COLORS */
 $green: #00685C;
@@ -54,7 +50,7 @@ $border: solid $green 1px;
 	font-weight: normal;
 }
 
-html, body {
+html, .body {
 	height: 100%;
 }
 
@@ -334,7 +330,7 @@ html, body {
 	
 	&__about {
 		border: $border;
-		height: 90vh;
+		height: 100%;
 		
 		p {
 			padding: 1em;
@@ -351,6 +347,7 @@ html, body {
 		width: 100%;
 		border-left: $border;
 		border-right: $border;
+		height: 100%;
 		
 		@media (min-width: 30rem) {
 			

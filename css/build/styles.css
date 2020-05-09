@@ -29,7 +29,7 @@
   font-family: "cinetype";
   src: url("../../fonts/GT-Cinetype-Regular.woff") format("woff");
   font-weight: normal; }
-html, body {
+html, .body {
   height: 100%; }
 
 /* logo */
@@ -241,7 +241,7 @@ html, body {
     font-weight: bold; }
   .site__about {
     border: solid #00685C 1px;
-    height: 90vh; }
+    height: 100%; }
     .site__about p {
       padding: 1em;
       font-family: "cinetype", sans-serif;
@@ -253,7 +253,8 @@ html, body {
     flex-direction: row;
     width: 100%;
     border-left: solid #00685C 1px;
-    border-right: solid #00685C 1px; }
+    border-right: solid #00685C 1px;
+    height: 100%; }
     @media (min-width: 30rem) {
       .site__students {
         border-right: none; } }
