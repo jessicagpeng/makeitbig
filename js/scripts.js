@@ -120,6 +120,18 @@ for (var i = 0; i < btns.length; i++) {
 // Work Page Tabs //
 
 function toggleWork(evt, cityName) {
+  /*
+  the reason you were having the issue with this is because it first sets it to display none, and only set it
+  to display block if it is already none, which is why you had to click twice.  First click set it to none,
+  second click set it to block.  There are two ways to fix this, the lazy way which was adding inline style=display:none
+  to the div, which is what I did, or rewrite the function.
+
+  Also, you can change cityName to be literally any variable you want, as long as its consistent
+  If this is homework or something, you should change the variable so its not as obvious that you copy/pasted the code
+  from w3 schools.  I know because Ive copy pasted code from the same tutorial in the past lmao
+
+  I ended
+  */
   var i, workcontent, worklink;
     workcontent = document.getElementsByClassName("workcontent");
    
@@ -142,6 +154,54 @@ function toggleWork(evt, cityName) {
     }
 }
 
+function toggleTabs(evt, id){
+
+	//well, I wasn't originally going to rewrite the function, but it was easier to re-write it than fix the other one
+
+	//this part closes tab A if you click tab B while tab A is open
+	//it will also remove the "active" from the class so it doesnt stay highlighted when you click the other tab
+	//this is gonna be the laziest way possible
+
+	let workLink = document.getElementsByClassName("worklink")
+
+	for (let i = 0; i < workLink.length; i++){
+		if (workLink[i].className === "worklink active"){
+			workLink[i].className = "worklink"
+		}
+	}
+
+	function otherTab(id){
+		console.log(id)
+		if (id === "yearLevel"){
+			let val = "workType"
+			console.log(val)
+			return val
+		}
+		if (id === "workType"){
+			let val = "yearLevel"
+			console.log(val)
+			return val
+		}
+	}
+	let targetClass = document.getElementById(id).style
+	let otherId = otherTab(id)
+	let otherClass = document.getElementById(otherId).style
+	
+	//this part opens/closes the tabs
+    if (targetClass.display === "none") {
+		otherClass.display = "none"
+        targetClass.display = "block"
+        evt.currentTarget.className += " active"
+    } else if (targetClass.display === "block") {
+		otherClass.display = "none"
+    	targetClass.display = "none"
+    	evt.currentTarget.className = "worklink"
+    } else {
+    	//this is a lazy but relatively safe implementation.  Normally in this block youd display an error
+    	//but it shouldnt break and I'm lazy about adding an error to your html
+    	console.log("youve got a big problem")
+  }
+}
 
 
 

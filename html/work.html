@@ -51,15 +51,15 @@
 		</div>
 		
 		<div class="work">
-		 	<button class="worklink" onclick="toggleWork(event, 'yearLevel')">
+		 	<button class="worklink" onclick="toggleTabs(event, 'yearLevel')">
 			  Year Level
 			</button>
-		  	<button class="worklink" onclick="toggleWork(event, 'workType')">
+		  	<button class="worklink" onclick="toggleTabs(event, 'workType')">
 				Work Type
 			</button>
 		</div>
 		
-		<div id="yearLevel" class="workcontent">
+		<div id="yearLevel" class="workcontent" style="display:none">
   			<div id="myBtnContainer" class="category__container">
 				<button id="defaultOpen" class="filter  active" onclick="filterSelection('all')"> Show All</button>
 				<button class="filter" onclick="filterSelection('bfa4')"> BFA4</button>
@@ -71,7 +71,7 @@
 				<button class="filter" onclick="filterSelection('pmfa')"> PMFA</button>
 			</div>
 		</div>
-		<div id="workType" class="workcontent">
+		<div id="workType" class="workcontent" style="display:none">
   			<div id="myBtnContainer" class="category__container">
 				<button id="defaultOpen" class="filter  active" onclick="filterSelection('all')"> Show All</button>
 				<button class="filter" onclick="filterSelection('bfa4')"> Print</button>
