@@ -123,12 +123,10 @@ function toggleWork(evt, cityName) {
   /*
   the reason you were having the issue with this is because it first sets it to display none, and only set it
   to display block if it is already none, which is why you had to click twice.  First click set it to none,
-  second click set it to block.  There are two ways to fix this, the lazy way which was adding inline style=display:none
-  to the div, which is what I did, or rewrite the function.
+  second click set it to block.  There are two ways to fix this, the lazy way which was adding inline style=display:none to the div, which is what I did, or rewrite the function.
 
   Also, you can change cityName to be literally any variable you want, as long as its consistent
-  If this is homework or something, you should change the variable so its not as obvious that you copy/pasted the code
-  from w3 schools.  I know because Ive copy pasted code from the same tutorial in the past lmao
+  If this is homework or something, you should change the variable so its not as obvious that you copy/pasted the code from w3 schools.  I know because Ive copy pasted code from the same tutorial in the past lmao
 
   I ended
   */

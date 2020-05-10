@@ -383,12 +383,13 @@ html, .body {
 /* HOME */
 .background-image {
 	display: flex;
-	background-image: url("../../images/home/home_bg-02.jpg");
+	background-image: url("../../images/home/home_bg-02.svg");
 	height: 100%;
 	width: 100%;
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+	z-index: -999;
 }
 
 .panel1 {
@@ -465,7 +466,7 @@ html, .body {
 			font-family: $sans;
 			color: $green;
 			line-height: 1.5em;
-			font-size: .9em;
+			font-size: .85em;
 		}
 	}
 }
@@ -849,9 +850,11 @@ a.category__box:hover {
 	
 	&__images {
 		max-width: 100%;
+		height: 36rem;
   		position: relative;
-  		margin: auto;
 		display: flex;
+		align-items: center;
+		justify-content: center;
 		
 		@media (min-width: 40rem) {
 			width: 65%;
@@ -860,10 +863,12 @@ a.category__box:hover {
 		
 		&__left {
 			border-right: $border;
+			height: 100%;
 
 		}
 		&__right {
 			border-left: $border;
+			height: 100%;
 			
 			@media (min-width: 40rem) {
 				border-right: $border;
