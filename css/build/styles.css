@@ -281,7 +281,7 @@ html, .body {
 /* HOME */
 .background-image {
   display: flex;
-  background-image: url("../../images/home_bg-02.jpg");
+  background-image: url("../../images/home/home_bg-02.jpg");
   height: 100%;
   width: 100%;
   background-position: center;
@@ -298,6 +298,24 @@ html, .body {
   right: 0em;
   width: 5em;
   top: 20em; }
+
+.command {
+  position: absolute;
+  right: 3em;
+  width: 5em;
+  top: 3em; }
+
+.typecursor {
+  position: absolute;
+  left: 6em;
+  width: 5em;
+  top: 10em; }
+
+.pencil {
+  position: absolute;
+  right: 0em;
+  width: 5em;
+  top: 8em; }
 
 .logotitle__container {
   align-self: center;
@@ -320,14 +338,19 @@ html, .body {
   display: flex;
   align-content: center;
   justify-content: center;
-  align-self: center; }
+  align-self: center;
+  z-index: 999; }
 .intro__text {
-  width: 80%;
+  width: 90%;
   padding: 1em;
-  background-color: white; }
+  position: absolute;
+  background-color: white;
+  border: solid #00685C 1px; }
   .intro__text p {
     font-family: "cinetype", sans-serif;
-    color: #00685C; }
+    color: #00685C;
+    line-height: 1.5em;
+    font-size: .9em; }
 
 /* TABS */
 .tab {
@@ -365,9 +388,7 @@ html, .body {
 .tabcontent {
   display: block;
   background-color: white;
-  height: 100%;
-  border-left: solid #00685C 1px;
-  border-right: solid #00685C 1px; }
+  height: 100%; }
 
 /* WORK */
 .work {
@@ -558,12 +579,12 @@ a.category__box:hover {
 
 /* STUDENT TEMPLATE PAGE */
 .info__container {
-  background-color: white;
-  font-family: "cinetype", sans-serif;
-  color: #00685C;
   border-right: solid #00685C 1px;
   border-left: solid #00685C 1px;
-  border-bottom: solid #00685C 1px; }
+  border-bottom: solid #00685C 1px;
+  background-color: white;
+  font-family: "cinetype", sans-serif;
+  color: #00685C; }
   .info__container h3 {
     font-weight: 800;
     font-size: .8em; }
@@ -698,7 +719,7 @@ a.category__box:hover {
   display: inline-block;
   transition: 0s; }
 
-.active, .dot1:hover {
+.dot1:hover {
   background-color: #5EB34B; }
 
 .tags__container {

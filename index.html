@@ -66,23 +66,32 @@
 				Make It BIG.
 			</h2>-->
 			
-			<div class="background-image  rellax" data-rellax-speed="-3"></div>
-			<div class="logotitle__container"> 
+			<div class="background-image  rellax" data-rellax-speed="-6"></div>
+			
+			<div class="logotitle__container rellax" data-rellax-speed="3"> 
 				<div class="logotitle__image">
-					<img src="images/logotitle-05.svg" width="100%"> 
+					<img src="images/home/logotitle-05.svg" width="100%"> 
 				</div>
 			</div>
-			<div class="panel1"> <img src="images/EOYS_index_bg-03.svg" width="100%"></div>
-			<div class="panel2"> <img src="images/EOYS_index_bg-04.svg" width="100%"></div>
+			
+			<div class="panel1 rellax" data-rellax-speed="-2"> <img src="images/home/EOYS_index_bg-03.svg" width="100%"></div>
+			<div class="command"> <img src="images/home/command.svg" width="100%"></div>
+			
+			<div class="panel2 rellax" data-rellax-speed="3"> <img src="images/home/EOYS_index_bg-04.svg" width="100%"></div>
+			
+			<div class="typecursor"> <img src="images/home/typecursor.svg" width="100%"></div>
+			
+			<div class="pencil"> <img src="images/home/pencil.svg" width="100%"></div>
 			
 			<div class="intro__container">
 				<div class="intro__text">
 					<p class="intro__body">
-						Our voices are loud and different, that’s what sets CalArts Graphic Designers apart from the rest of the crowd. We are focusing on hopes, ambitions, as well as our creative energy at a huge scale.
+						This year has been one of incredible growth, learning, and overcoming. We are showcasing the dynamic voices that set CalArts Graphic Designers apart from the rest of the crowd. Focusing on the hopes, ambitions, and creative energy of this program, we invite you to take a look at what it means for a CalArts Designer to <strong> Make It Big.</strong>
 					</p>
 				</div>
 			</div>
 			
+			<div class="panel2"> <img src="images/home/EOYS_index_bg-04.svg" width="100%"></div>
 		</div>
 	</div>
 
@@ -105,12 +114,15 @@
 	</div>
 	
 	<script src="js/scripts.js"></script>
-	<script src="js/rellax.min.js">
-		var rellax = new Rellax('.rellax', {
-			center: true
-		});
-	</script>
-	
+	<script src="js/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax', {
+        center: true
+      });
+      var rellaxNonCentered = new Rellax('.rellax-non-centered', {
+        center: false
+      });
+    </script>
 </body>
 </html>
 

@@ -383,7 +383,7 @@ html, .body {
 /* HOME */
 .background-image {
 	display: flex;
-	background-image: url("../../images/home_bg-02.jpg");
+	background-image: url("../../images/home/home_bg-02.jpg");
 	height: 100%;
 	width: 100%;
   	background-position: center;
@@ -402,6 +402,27 @@ html, .body {
 	right: 0em;
 	width: 5em;
 	top: 20em;
+}
+
+.command {
+	position: absolute;
+	right: 3em;
+	width: 5em;
+	top: 3em;
+}
+
+.typecursor {
+	position: absolute;
+	left: 6em;
+	width: 5em;
+	top: 10em;
+}
+
+.pencil {
+	position: absolute;
+	right: 0em;
+	width: 5em;
+	top: 8em;
 }
 
 .logotitle {
@@ -423,7 +444,6 @@ html, .body {
 }
 
 .intro {
-
 	&__container {
 		position: absolute;
 		width: 100%;
@@ -432,16 +452,20 @@ html, .body {
 		align-content: center;
 		justify-content: center;
 		align-self: center;
+		z-index: 999;
 		
 	}
 	&__text {
-		width: 80%;
+		width: 90%;
 		padding: 1em;
+		position: absolute;
 		background-color: white;
-		
+		border: $border;
 		p {
 			font-family: $sans;
 			color: $green;
+			line-height: 1.5em;
+			font-size: .9em;
 		}
 	}
 }
@@ -492,8 +516,7 @@ html, .body {
   	display: block;
 	background-color: white;
   	height: 100%;
-	border-left: $border;
-	border-right: $border;
+	
 }
 
 
@@ -743,12 +766,13 @@ a.category__box:hover {
 /* STUDENT TEMPLATE PAGE */
 .info {
 	&__container {
-		background-color: white;
-		font-family: $sans;
-		color: $green;
 		border-right: $border;
 		border-left: $border;
 		border-bottom: $border;
+		background-color: white;
+		font-family: $sans;
+		color: $green;
+		
 		
 		h3 {
 			font-weight: 800;
@@ -926,7 +950,7 @@ a.category__box:hover {
   	transition: 0s;
 }
 
-.active, .dot1:hover {
+.dot1:hover {
   background-color: $lightgreen;
 }
 
