@@ -704,7 +704,9 @@ a.category__box:hover {
   border-right: solid #00685C 1px;
   border-left: solid #00685C 1px;
   border-bottom: solid #00685C 1px;
-  width: 100vw; }
+  width: 100vw;
+  display: flex;
+  flex-flow: column; }
   @media (min-width: 40rem) {
     .proj__container {
       display: flex;
