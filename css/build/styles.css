@@ -743,7 +743,8 @@ a.category__box:hover {
 
 .content {
   background-color: white;
-  padding: 0; }
+  padding: 0;
+  height: 100%; }
 
 .show {
   display: block; }
