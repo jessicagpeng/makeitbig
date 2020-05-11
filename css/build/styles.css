@@ -606,6 +606,9 @@ html, .body {
   position: absolute;
   background-color: white;
   border: solid #00685C 1px; }
+  @media (min-width: 60rem) {
+    .intro__text {
+      padding: 1em; } }
   .intro__text p {
     font-family: "cinetype", sans-serif;
     color: #00685C;
