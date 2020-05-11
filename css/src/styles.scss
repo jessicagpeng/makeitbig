@@ -123,6 +123,18 @@ html, .body {
 		height: 100%;
 	}
 	
+	ul {
+		@media (min-width: 45rem){
+			height: 100%;
+		}
+	}
+	
+	li {
+		@media (min-width: 45rem){
+			height: 100%;
+		}
+	}
+	
 	a {
 		font-family: $display;
 		letter-spacing: .1em;
@@ -136,13 +148,37 @@ html, .body {
 		@media (min-width: 45rem){
 			color: $green;
 			border-right: $border;
-			height: 105%;
+			height: 100%;
 		}
 	}
 
-	a:hover {
-		color: $blue;
+	li:hover:nth-child(1) {
+		color: $beige;
+		background-color: $pink;
 	}
+	
+	li:hover:nth-child(2) {
+		color: $beige;
+		background-color: $blue;
+	}
+	
+	li:hover:nth-child(3) {
+		color: $beige;
+		background-color: $lightgreen;
+	}
+	
+	a:hover:nth-child(1) {
+		color: $beige;
+	}
+	
+	a:hover:nth-child(2) {
+		color: $beige;
+	}
+	
+	a:hover:nth-child(3) {
+		color: $beige;
+	}
+	
 	
 	a:active {
 		color: $blue;
