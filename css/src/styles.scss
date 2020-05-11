@@ -833,7 +833,7 @@ a.category__box:hover {
 		}
 	}
 	
-	&__left {
+	&__right {
 		width: 100%;
 		min-height: 70vh;
 		padding: 1em;
@@ -855,8 +855,12 @@ a.category__box:hover {
 			padding-right: 4rem;
 			padding-left: 4rem;
 		}
+		@media (min-width: 90rem) {
+			padding-right: 10%;
+			padding-left: 4rem;
+		}
 	}
-	&__right {
+	&__left {
 		width: 100%;
 		min-height: 70vh;
 		padding: 1em;
@@ -878,12 +882,15 @@ a.category__box:hover {
 			padding-left: 4rem;
 			padding-right: 4rem;
 		}
+		@media (min-width: 90rem) {
+			padding-left: 8%;
+			padding-right: 5rem;
+		}
 	}
 	
 	&__question {
 		border: .5px solid $green;
 		padding: .5em;
-		
 	}
 	&__answer {
 		padding: .5em;
@@ -916,10 +923,8 @@ a.category__box:hover {
 			flex-flow: row;
 			flex-wrap: wrap;
 		}
-
 	}
-	
-	
+
 	&__images {
 		width: 100vw;
   		position: relative;
@@ -932,8 +937,6 @@ a.category__box:hover {
 			width: 65%;
 			margin: inherit;
 		}
-		
-		
 		&__left {
 			height: 100%;
 		}

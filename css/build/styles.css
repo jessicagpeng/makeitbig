@@ -633,48 +633,56 @@ a.category__box:hover {
       align-content: stretch;
       justify-content: stretch;
       flex-wrap: wrap; } }
-.info__left {
+.info__right {
   width: 100%;
   min-height: 70vh;
   padding: 1em; }
   @media (min-width: 40rem) {
-    .info__left {
+    .info__right {
       width: 40%;
       border-left: 0.5px solid #00685C; } }
   @media (min-width: 60rem) {
-    .info__left {
+    .info__right {
       padding-right: 2rem;
       padding-left: 2rem; } }
   @media (min-width: 70rem) {
-    .info__left {
+    .info__right {
       padding-right: 3rem;
       padding-left: 3rem;
       padding-top: 2rem; } }
   @media (min-width: 80rem) {
-    .info__left {
+    .info__right {
       padding-right: 4rem;
       padding-left: 4rem; } }
-.info__right {
+  @media (min-width: 90rem) {
+    .info__right {
+      padding-right: 10%;
+      padding-left: 4rem; } }
+.info__left {
   width: 100%;
   min-height: 70vh;
   padding: 1em;
   border-bottom: 0.5px solid #00685C; }
   @media (min-width: 40rem) {
-    .info__right {
+    .info__left {
       width: 60%;
       border-bottom: none; } }
   @media (min-width: 60rem) {
-    .info__right {
+    .info__left {
       padding-left: 2rem; } }
   @media (min-width: 70rem) {
-    .info__right {
+    .info__left {
       padding-left: 3rem;
       padding-right: 3rem;
       padding-top: 2rem; } }
   @media (min-width: 80rem) {
-    .info__right {
+    .info__left {
       padding-left: 4rem;
       padding-right: 4rem; } }
+  @media (min-width: 90rem) {
+    .info__left {
+      padding-left: 8%;
+      padding-right: 5rem; } }
 .info__question {
   border: 0.5px solid #00685C;
   padding: .5em; }
