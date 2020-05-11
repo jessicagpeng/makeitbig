@@ -188,14 +188,14 @@ html, .body {
 
 .site {
   width: 100vw;
-  height: 100%;
+  min-height: 100vh;
   top: calc(100vh - 3em);
   background-color: white;
   /*border: $border;
   border-top: none;*/ }
   .site__intro {
     max-width: 100%;
-    height: 100%;
+    height: 150%;
     margin: 0 auto;
     border: solid #00685C 1px;
     border-top: none;
@@ -283,7 +283,7 @@ html, .body {
 .background-image {
   display: flex;
   background-image: url("../../images/home/home_bg-02.svg");
-  height: 100%;
+  height: 150vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -633,11 +633,11 @@ a.category__box:hover {
       flex-wrap: wrap; } }
 .info__left {
   width: 100%;
-  min-height: 70vh;
   padding: 1em;
   border-bottom: 0.5px solid #00685C; }
   @media (min-width: 40rem) {
     .info__left {
+      min-height: 100vh;
       width: 60%;
       border-bottom: none; } }
   @media (min-width: 60rem) {
@@ -658,10 +658,10 @@ a.category__box:hover {
       padding-right: 5rem; } }
 .info__right {
   width: 100%;
-  min-height: 70vh;
   padding: 1em; }
   @media (min-width: 40rem) {
     .info__right {
+      min-height: 100vh;
       width: 40%;
       border-left: 0.5px solid #00685C; } }
   @media (min-width: 60rem) {
@@ -874,7 +874,6 @@ a.category__box:hover {
 
 /* footer */
 .footer {
-  height: 10em;
   width: 100vw;
   background-color: #FFF7E3;
   border: solid #00685C 1px;
