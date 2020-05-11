@@ -397,6 +397,19 @@ html, .body {
 	position: absolute;
 	width: 5em;
 	top: 4em;
+	
+	@media(min-width: 35rem) {
+		width: 7em;
+		left: 3%;
+	}
+	@media(min-width: 60rem) {
+		width: 10%;
+		left: 3%;
+	}
+	@media(min-width: 80rem) {
+		width: 8%;
+		left: 9%;
+	}
 }
 
 .panel2 {
@@ -404,13 +417,48 @@ html, .body {
 	right: 0em;
 	width: 5em;
 	top: 20em;
+	
+	@media(min-width: 35rem) {
+		width: 8em;
+		right: .5em;
+	}
+	@media(min-width: 60rem) {
+		width: 15%;
+		right: 3%;
+		top: 25em;
+	}
+	@media(min-width: 80rem) {
+		width: 12%;
+		right: 9%;
+		top: 30em;
+	}
+	@media(min-width: 90rem) {
+		width: 12%;
+		right: 6%;
+		top: 35em;
+	}
 }
 
-.command {
+.command1 {
 	position: absolute;
 	right: 3em;
 	width: 5em;
 	top: 3em;
+	
+	@media(min-width: 35rem) {
+		width: 6em;
+		right: 12%;
+	}
+	@media(min-width: 60rem) {
+		width: 15%;
+		right: 16%;
+		top: 0;
+	}
+	@media(min-width: 90rem) {
+		width: 12%;
+		right: 16%;
+		top: 1em;
+	}
 }
 
 .typecursor {
@@ -418,6 +466,19 @@ html, .body {
 	left: 6em;
 	width: 5em;
 	top: 10em;
+	
+	@media(min-width: 35rem) {
+		width: 6em;
+		left: 25%;
+	}
+	@media(min-width: 60rem) {
+		width: 15%;
+		left: 15%;
+	}
+	@media(min-width: 80rem) {
+		width: 12%;
+		left: 20%;
+	}
 }
 
 .pencil {
@@ -425,6 +486,22 @@ html, .body {
 	right: 0em;
 	width: 5em;
 	top: 8em;
+	
+	@media(min-width: 35rem) {
+		width: 6em;
+		right: 5%;
+		top: 4em;
+	}
+	@media(min-width: 60rem) {
+		width: 8em;
+		right: 8%;
+		top: 6em;
+	}
+	@media(min-width: 60rem) {
+		width: 10em;
+		right: 8%;
+		top: 6em;
+	}
 }
 
 .bounding1 {
@@ -432,6 +509,22 @@ html, .body {
 	right: 3em;
 	width: 6em;
 	top: 15em;
+	
+	@media(min-width: 35rem) {
+		width: 8em;
+		right: 10em;
+		top: 25em;
+	}
+	@media(min-width: 60rem) {
+		width: 9em;
+		right: 20%;
+		top: 35em;
+	}
+	@media(min-width: 90rem) {
+		width: 10em;
+		right: 30%;
+		top: 45em;
+	}
 }
 
 .xacto {
@@ -439,13 +532,50 @@ html, .body {
 	left: 0em;
 	width: 15em;
 	bottom: 12em;
+	
+	@media(min-width: 35rem) {
+		width: 24em;
+		bottom: 22em;
+	}
+	@media(min-width: 60rem) {
+		width: 32em;
+		bottom: 8em;
+	}
+	@media(min-width: 80rem) {
+		width: 36em;
+		bottom: 4em;
+	}
+	@media(min-width: 90rem) {
+		width: 40em;
+		bottom: 0em;
+		left: 1em;
+	}
+	@media(min-width: 100rem) {
+		bottom: -5em;
+	}
 }
 
 .zoom {
 	position: absolute;
 	right: 2em;
 	width: 15em;
-	bottom: -5em;
+	bottom: -10em;
+	
+	@media(min-width: 35rem) {
+		width: 20em;
+		bottom: -15em;
+		right: 25%
+	}
+	@media(min-width: 60rem) {
+		width: 22em;
+		bottom: -20em;
+		right: 25%
+	}
+	@media(min-width: 90rem) {
+		width: 24em;
+		bottom: -35em;
+		right: 25%
+	}
 }
 
 .blocks1 {
@@ -453,6 +583,20 @@ html, .body {
 	right: 1em;
 	width: 5em;
 	top: 6em;
+	
+	@media(min-width: 35rem) {
+		width: 7em;
+		top: 5em;
+	}
+	@media(min-width: 60rem) {
+		width: 10em;
+		top: 4em;
+		right: 3em;
+	}
+	@media(min-width: 90rem) {
+		width: 12em;
+		top: 3em;
+	}
 }
 
 .blocks2 {
@@ -460,7 +604,64 @@ html, .body {
 	left: 0em;
 	width: 2em;
 	top: 20em;
+	
+	@media(min-width: 35rem) {
+		width: 3em;
+		top: 25em;
+	}
+	@media(min-width: 60rem) {
+		width: 4em;
+		top: 35em;
+	}
+	@media(min-width: 90rem) {
+		width: 5.5em;
+		top: 40em;
+	}
 }
+
+.blocks3 {
+	position: absolute;
+	right: 0em;
+	width: 8em;
+	bottom: -28em;
+	
+	@media(min-width: 35rem) {
+		width: 10em;
+		bottom: -30em;
+	}
+	@media(min-width: 60rem) {
+		width: 12em;
+		bottom: -32em;
+	}
+	@media(min-width: 90rem) {
+		width: 14em;
+		bottom: -36em;
+		right: 2em;
+	}
+}
+
+.command2 {
+	position: absolute;
+	left: 1.5em;
+	width: 7em;
+	bottom: -20em;
+	
+	@media(min-width: 35rem) {
+		width: 9em;
+		bottom: -22em;
+	}
+	@media(min-width: 60rem) {
+		width: 11em;
+		bottom: -22em;
+		left: 3em;
+	}
+	@media(min-width: 90rem) {
+		width: 13em;
+		bottom: -18em;
+		left: 30%;
+	}
+}
+
 
 .logotitle {
 	&__container{
@@ -473,10 +674,19 @@ html, .body {
 		justify-content: center;
 		z-index: 999;
 		margin: 0 auto;
+		
+		
+		
 	}
 	&__image {
 		padding: 0;
 		width: 100%;
+		@media(min-width: 80rem) {
+			width: 80%;
+		}
+		@media(min-width: 100rem) {
+			width: 75%;
+		}
 	}
 }
 
@@ -491,24 +701,85 @@ html, .body {
 		align-self: center;
 		z-index: 999;
 		
+		@media(min-width: 35rem) {
+			top: 35em;
+		}
+		@media(min-width: 45rem) {
+			width: 45%;
+			left: 50%;
+		}
+		@media(min-width: 60rem) {
+			width: 35%;
+			left: 50%;
+			top: 40em;
+		}
+		@media(min-width: 90rem) {
+			width: 30%;
+			left: 50%;
+			top: 45em;
+		}
 	}
 	&__text {
-		width: 90%;
-		padding: 1em;
+		width: 80%;
+		padding: .75em;
 		position: absolute;
 		background-color: white;
 		border: $border;
+		
+		@media(min-width: 35rem) {
+			
+		}
+		
 		p {
 			font-family: $sans;
 			color: $green;
 			line-height: 1.5em;
 			font-size: .85em;
+			
+			@media(min-width: 60rem) {
+				font-size:.9em;
+			}
+			@media(min-width: 90rem) {
+				font-size:1em;
+			}
 		}
 	}
 }
 
+.enter {
+	&__container {
+		position: absolute;
+		width: 100%;
+		bottom: -14em;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		align-self: center;
+		z-index: 999;
+	}
+	&__button {
+		width: 18em;
+		padding: .75em;
+		position: absolute;
+		background-color: $lightgreen;
+		border: $border;
+		color: white;
+		font-family: $sans;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		
+		@media(min-width: 60rem) {
+			width: 20em;
+			font-size: 1.2em;
+		}
 
+	}
+}
 
+.enter__button:hover{
+	background-color: $pink;
+}
 
 
 /* WORK */

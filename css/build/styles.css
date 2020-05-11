@@ -294,60 +294,246 @@ html, .body {
   position: absolute;
   width: 5em;
   top: 4em; }
+  @media (min-width: 35rem) {
+    .panel1 {
+      width: 7em;
+      left: 3%; } }
+  @media (min-width: 60rem) {
+    .panel1 {
+      width: 10%;
+      left: 3%; } }
+  @media (min-width: 80rem) {
+    .panel1 {
+      width: 8%;
+      left: 9%; } }
 
 .panel2 {
   position: absolute;
   right: 0em;
   width: 5em;
   top: 20em; }
+  @media (min-width: 35rem) {
+    .panel2 {
+      width: 8em;
+      right: .5em; } }
+  @media (min-width: 60rem) {
+    .panel2 {
+      width: 15%;
+      right: 3%;
+      top: 25em; } }
+  @media (min-width: 80rem) {
+    .panel2 {
+      width: 12%;
+      right: 9%;
+      top: 30em; } }
+  @media (min-width: 90rem) {
+    .panel2 {
+      width: 12%;
+      right: 6%;
+      top: 35em; } }
 
-.command {
+.command1 {
   position: absolute;
   right: 3em;
   width: 5em;
   top: 3em; }
+  @media (min-width: 35rem) {
+    .command1 {
+      width: 6em;
+      right: 12%; } }
+  @media (min-width: 60rem) {
+    .command1 {
+      width: 15%;
+      right: 16%;
+      top: 0; } }
+  @media (min-width: 90rem) {
+    .command1 {
+      width: 12%;
+      right: 16%;
+      top: 1em; } }
 
 .typecursor {
   position: absolute;
   left: 6em;
   width: 5em;
   top: 10em; }
+  @media (min-width: 35rem) {
+    .typecursor {
+      width: 6em;
+      left: 25%; } }
+  @media (min-width: 60rem) {
+    .typecursor {
+      width: 15%;
+      left: 15%; } }
+  @media (min-width: 80rem) {
+    .typecursor {
+      width: 12%;
+      left: 20%; } }
 
 .pencil {
   position: absolute;
   right: 0em;
   width: 5em;
   top: 8em; }
+  @media (min-width: 35rem) {
+    .pencil {
+      width: 6em;
+      right: 5%;
+      top: 4em; } }
+  @media (min-width: 60rem) {
+    .pencil {
+      width: 8em;
+      right: 8%;
+      top: 6em; } }
+  @media (min-width: 60rem) {
+    .pencil {
+      width: 10em;
+      right: 8%;
+      top: 6em; } }
 
 .bounding1 {
   position: absolute;
   right: 3em;
   width: 6em;
   top: 15em; }
+  @media (min-width: 35rem) {
+    .bounding1 {
+      width: 8em;
+      right: 10em;
+      top: 25em; } }
+  @media (min-width: 60rem) {
+    .bounding1 {
+      width: 9em;
+      right: 20%;
+      top: 35em; } }
+  @media (min-width: 90rem) {
+    .bounding1 {
+      width: 10em;
+      right: 30%;
+      top: 45em; } }
 
 .xacto {
   position: absolute;
   left: 0em;
   width: 15em;
   bottom: 12em; }
+  @media (min-width: 35rem) {
+    .xacto {
+      width: 24em;
+      bottom: 22em; } }
+  @media (min-width: 60rem) {
+    .xacto {
+      width: 32em;
+      bottom: 8em; } }
+  @media (min-width: 80rem) {
+    .xacto {
+      width: 36em;
+      bottom: 4em; } }
+  @media (min-width: 90rem) {
+    .xacto {
+      width: 40em;
+      bottom: 0em;
+      left: 1em; } }
+  @media (min-width: 100rem) {
+    .xacto {
+      bottom: -5em; } }
 
 .zoom {
   position: absolute;
   right: 2em;
   width: 15em;
-  bottom: -5em; }
+  bottom: -10em; }
+  @media (min-width: 35rem) {
+    .zoom {
+      width: 20em;
+      bottom: -15em;
+      right: 25%; } }
+  @media (min-width: 60rem) {
+    .zoom {
+      width: 22em;
+      bottom: -20em;
+      right: 25%; } }
+  @media (min-width: 90rem) {
+    .zoom {
+      width: 24em;
+      bottom: -35em;
+      right: 25%; } }
 
 .blocks1 {
   position: absolute;
   right: 1em;
   width: 5em;
   top: 6em; }
+  @media (min-width: 35rem) {
+    .blocks1 {
+      width: 7em;
+      top: 5em; } }
+  @media (min-width: 60rem) {
+    .blocks1 {
+      width: 10em;
+      top: 4em;
+      right: 3em; } }
+  @media (min-width: 90rem) {
+    .blocks1 {
+      width: 12em;
+      top: 3em; } }
 
 .blocks2 {
   position: absolute;
   left: 0em;
   width: 2em;
   top: 20em; }
+  @media (min-width: 35rem) {
+    .blocks2 {
+      width: 3em;
+      top: 25em; } }
+  @media (min-width: 60rem) {
+    .blocks2 {
+      width: 4em;
+      top: 35em; } }
+  @media (min-width: 90rem) {
+    .blocks2 {
+      width: 5.5em;
+      top: 40em; } }
+
+.blocks3 {
+  position: absolute;
+  right: 0em;
+  width: 8em;
+  bottom: -28em; }
+  @media (min-width: 35rem) {
+    .blocks3 {
+      width: 10em;
+      bottom: -30em; } }
+  @media (min-width: 60rem) {
+    .blocks3 {
+      width: 12em;
+      bottom: -32em; } }
+  @media (min-width: 90rem) {
+    .blocks3 {
+      width: 14em;
+      bottom: -36em;
+      right: 2em; } }
+
+.command2 {
+  position: absolute;
+  left: 1.5em;
+  width: 7em;
+  bottom: -20em; }
+  @media (min-width: 35rem) {
+    .command2 {
+      width: 9em;
+      bottom: -22em; } }
+  @media (min-width: 60rem) {
+    .command2 {
+      width: 11em;
+      bottom: -22em;
+      left: 3em; } }
+  @media (min-width: 90rem) {
+    .command2 {
+      width: 13em;
+      bottom: -18em;
+      left: 30%; } }
 
 .logotitle__container {
   align-self: center;
@@ -362,6 +548,12 @@ html, .body {
 .logotitle__image {
   padding: 0;
   width: 100%; }
+  @media (min-width: 80rem) {
+    .logotitle__image {
+      width: 80%; } }
+  @media (min-width: 100rem) {
+    .logotitle__image {
+      width: 75%; } }
 
 .intro__container {
   position: absolute;
@@ -372,9 +564,26 @@ html, .body {
   justify-content: center;
   align-self: center;
   z-index: 999; }
+  @media (min-width: 35rem) {
+    .intro__container {
+      top: 35em; } }
+  @media (min-width: 45rem) {
+    .intro__container {
+      width: 45%;
+      left: 50%; } }
+  @media (min-width: 60rem) {
+    .intro__container {
+      width: 35%;
+      left: 50%;
+      top: 40em; } }
+  @media (min-width: 90rem) {
+    .intro__container {
+      width: 30%;
+      left: 50%;
+      top: 45em; } }
 .intro__text {
-  width: 90%;
-  padding: 1em;
+  width: 80%;
+  padding: .75em;
   position: absolute;
   background-color: white;
   border: solid #00685C 1px; }
@@ -383,6 +592,40 @@ html, .body {
     color: #00685C;
     line-height: 1.5em;
     font-size: .85em; }
+    @media (min-width: 60rem) {
+      .intro__text p {
+        font-size: .9em; } }
+    @media (min-width: 90rem) {
+      .intro__text p {
+        font-size: 1em; } }
+
+.enter__container {
+  position: absolute;
+  width: 100%;
+  bottom: -14em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  z-index: 999; }
+.enter__button {
+  width: 18em;
+  padding: .75em;
+  position: absolute;
+  background-color: #5EB34B;
+  border: solid #00685C 1px;
+  color: white;
+  font-family: "cinetype", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none; }
+  @media (min-width: 60rem) {
+    .enter__button {
+      width: 20em;
+      font-size: 1.2em; } }
+
+.enter__button:hover {
+  background-color: #EB3772; }
 
 /* WORK */
 .work {
