@@ -56,6 +56,7 @@
 				About
 			</h2>
 		</div>
+		<!-- 
 		<div class="site__about">
 			<div class="about__container">
 				<div class="about__left">
@@ -63,33 +64,82 @@
 						Here is some text about our End of Year Show, "Make It Big"!
 					</p>
 				</div>
-				<div class="about__right">
-					
-				<div class="proj__container">
-					<div class="proj__images">				
+				
+				<div class="about__right">	
+					<div id="proj1" class="tabcontent">
+					<div class="proj__container">
+						<div class="proj__images">				
 						<div class="proj__images__left">
+							<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+						</div>
+						<div class="image">
+							<div class="mySlides1">
+								<img src="../images/test1.JPG" style="width:100%">
+							</div>
+
+							<div class="mySlides1">
+								<img src="../images/test2.JPG" style="width:100%">
+							</div>
+							
+							<div class="mySlides1">
+								<img src="../images/test3.JPG" style="width:100%">
+							</div>
+
+						</div>
+
+						<div class="proj__images__right">
+							<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+						</div>
+					</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>-->
+		
+		<div class="tab hide">
+			<button class="tablink" onclick="openPage('about', this )" id="defaultOpen">About</button>
+		</div>
+
+		<div id="about" class="tabcontent">
+			<div class="about__container">
+				<div class="proj__text  about__left">
+						<p class="caption"> 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<p class="caption">
+							Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Nulla facilisi morbi tempus iaculis urna id volutpat. Porttitor rhoncus dolor purus non enim. Dictum varius duis at consectetur. Turpis egestas integer eget aliquet nibh praesent tristique magna. Viverra aliquet eget sit amet. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Sed turpis tincidunt id aliquet risus feugiat in ante metus. Enim neque volutpat ac tincidunt vitae semper. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Orci phasellus egestas tellus rutrum tellus. Dolor magna eget est lorem ipsum dolor. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Nam libero justo laoreet sit amet cursus sit. Et ultrices neque ornare aenean euismod elementum nisi. Sapien pellentesque habitant morbi tristique senectus et netus. In fermentum posuere urna nec tincidunt praesent semper feugiat. Rutrum quisque non tellus orci ac auctor augue mauris augue.
+						</p>
+					</div>
+					<div class="proj__images">				
+						<div class="proj__images__left about__right">
 							<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
 						</div>
 						<div class="image">
 							<div class="mySlides1">
 								<img src="../images/test1.JPG" style="width:100%">
 							</div>
-							
+
 							<div class="mySlides1">
 								<img src="../images/test2.JPG" style="width:100%">
+							</div>
+
+							<div class="mySlides1">
+								<img src="../images/test3.JPG" style="width:100%">
 							</div>
 						</div>
 						<div class="proj__images__right">
 							<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 						</div>
 					</div>
-				</div>
-				
+
 					
 				</div>
-			</div>
 		</div>
-	</div>
+
+	
 
 	
 	<!-- SITE FOOTER -->
