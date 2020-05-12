@@ -922,6 +922,23 @@ a.category__box:hover {
     .info__left {
       padding-left: 8%;
       padding-right: 5rem; } }
+.info__contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 1em; }
+.info__tag {
+  border: solid #00685C 1px;
+  padding: .5em;
+  margin-right: .5em;
+  margin-top: 4em;
+  margin-bottom: .5em;
+  font-size: .8em;
+  color: #00685C;
+  text-decoration: none; }
+  .info__tag a {
+    color: #00685C;
+    text-decoration: none; }
 .info__right {
   width: 100%;
   padding: 1em; }

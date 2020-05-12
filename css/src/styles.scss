@@ -1143,7 +1143,6 @@ a.category__box:hover {
 	
 	&__left {
 		width: 100%;
-		
 		padding: 1em;
 		border-bottom: .5px solid $green;
 		
@@ -1167,6 +1166,29 @@ a.category__box:hover {
 		@media (min-width: 90rem) {
 			padding-left: 8%;
 			padding-right: 5rem;
+		}
+	}
+	
+	&__contact {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin-bottom: 1em;
+	}
+	
+	&__tag {
+		border: $border;
+		padding: .5em;
+		margin-right: .5em;
+		margin-top: 4em;
+		margin-bottom: .5em;
+		font-size: .8em;
+		color: $green;
+		text-decoration: none;
+		
+		a {
+			color: $green;
+			text-decoration: none;
 		}
 	}
 	
