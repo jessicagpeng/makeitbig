@@ -911,7 +911,7 @@ a.category__box:hover {
 	
 	&__container {
 		width: 100%;
-		background-color: blue;
+		background-color: white;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: stretch;
@@ -922,7 +922,7 @@ a.category__box:hover {
 	
 	&__item {
 		width: 50%;
-		background-color: yellow;
+		background-color: white;
 		border-right: $border;
 		border-bottom: $border;
 		
@@ -1361,6 +1361,12 @@ a.category__box:hover {
 			color: $green;
 		}
 	}
+	
+	&__image {
+		img {
+			max-height: 70vh;
+		}
+	}
 }
 
 .mySlides1, .mySlides2, .mySlides3, .myslides4 {
@@ -1399,6 +1405,11 @@ a.category__box:hover {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.proj__images__right,  .proj__images__left {
+	cursor: pointer;
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
