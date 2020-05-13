@@ -307,7 +307,7 @@ html, .body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -999; }
+  position: relative; }
 
 .panel1 {
   position: absolute;
