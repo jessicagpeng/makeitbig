@@ -927,16 +927,13 @@ a.category__box:hover {
 /* STUDENTS */
 .tab {
  	//width: 100vw;
-	border: 1px solid $green;
+	border-top: 1px solid $green;
+	border-left: 1px solid $green;
  	background-color: white;
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: auto;
 	justify-content: center;
-	
-	button:last-child{
-		border-right: none;
-	}
 }
 .tablink {
  	background-color: white;
@@ -948,6 +945,7 @@ a.category__box:hover {
 	font-size: .7rem;
 	padding: 1em;
 	border-right: $border;
+	border-bottom: $border;
 	flex-grow: 1;
 	
 	@media (min-width: 45rem) {
@@ -1173,32 +1171,46 @@ a.category__box:hover {
 			object-fit: contain;
 			user-select: none;
 		}
-		
+		video {
+			display: block;
+		}
 		&__left {
 			//height: 100%;
+			width: 5%;
 			
 			@media (min-width: 40rem) {
 				border-right: $border;
 			}
 			@media (min-width: 60rem) {
-				padding: 5%;
+				width: 10%;
 			}
 			@media (min-width: 80rem) {
-				padding: 10%;
+				width: 20%;
 			}
+		}
+		.image {		
+			width: 90%;
+			
+			@media (min-width: 60rem) {
+				width: 80%;
+			}
+			@media (min-width: 80rem) {
+				width: 60%;
+			}			
 		}
 		&__right {
 			//height: 100%;
+			width: 5%;
 			
 			@media (min-width: 40rem) {
 				border-left: $border;
 				border-right: $border;
 			}
 			@media (min-width: 60rem) {
-				padding: 5%;
+				width: 10%;
 			}
 			@media (min-width: 80rem) {
-				padding: 10%;
+				width: 20%;
 			}		
 		}
 	}
@@ -1261,7 +1273,6 @@ a.category__box:hover {
 		}
 	}
 }
-
 .mySlides1, .mySlides2, .mySlides3, .myslides4 {
 	//width: 100%;
 	height: 100%;
@@ -1275,28 +1286,25 @@ a.category__box:hover {
 	@media (min-width: 40rem) {
 		border: none;
 	}
-
 }
 
 /* Next & previous buttons */
 .prev, .next {
   	cursor: pointer;
   	position: absolute;
-  	top: 50%;
-	left: 45%;
-  	padding: .5em;
+  	top: 48%;
   	color: $green;
   	font-weight: bold;
-  	font-size: 18px;
-  	transition: 0.6s ease;
-  	border-radius: 0 3px 3px 0;
+  	font-size: 1.2em;
   	user-select: none;
 }
 
 /* Position the "next button" to the right */
+.prev {
+  left: calc(50% - .25em);
+}
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: calc(50% - .25em);
 }
 .proj__images__right,  .proj__images__left {
 	cursor: pointer;
