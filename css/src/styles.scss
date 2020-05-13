@@ -47,8 +47,8 @@ $body: 'Raleway', sans-serif;
 }
 
 html, .body {
-	height: 100%;
-	width: 100vw;
+//	height: 100%;
+//	width: 100vw;
 }
 
 /* logo */
@@ -257,9 +257,8 @@ html, .body {
 	display: block;
 }
 .site {
-	width: 100vw;
-	min-height: 100vh;
-	top: calc(100vh - 3em);
+	//width: 100vw;
+	//min-height: 100vh;
 	background-color: white;
 	
 	&__intro {
@@ -366,13 +365,12 @@ html, .body {
 	}
 }
 
-
 /* HOME */
 .background-image {
 	display: flex;
 	background-image: url("../../images/home/home_bg-02.svg");
 	height: 150vh;
-	width: 100%;
+	//width: 100%;
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
@@ -637,6 +635,7 @@ html, .body {
 	}
 }
 .logotitle {
+	
 	&__container{
 		align-self: center;
 		position: absolute;
@@ -660,9 +659,10 @@ html, .body {
 	}
 }
 .intro {
+	
 	&__container {
 		position: absolute;
-		width: 100%;
+		//width: 100%;
 		top: 30em;
 		display: flex;
 		align-content: center;
@@ -715,6 +715,7 @@ html, .body {
 	}
 }
 .enter {
+	
 	&__container {
 		position: absolute;
 		width: 100%;
@@ -750,7 +751,7 @@ html, .body {
 
 /* WORK */
 .work {
- 	width: 100%;
+ 	//width: 100%;
 	border: 1px solid $green;
  	background-color: white;
 	display: flex;
@@ -797,7 +798,7 @@ html, .body {
 	&__container {
 		display: flex;
 		flex-wrap: wrap;
-		width: 100%;
+		//width: 100%;
 		background-color: yellow;
 	}
 	&__box {
@@ -830,7 +831,7 @@ a.category__box:hover {
 .grid {
 	
 	&__container {
-		width: 100%;
+		//width: 100%;
 		background-color: white;
 		display: flex;
 		flex-wrap: wrap;
@@ -925,7 +926,7 @@ a.category__box:hover {
 
 /* STUDENTS */
 .tab {
- 	width: 100vw;
+ 	//width: 100vw;
 	border: 1px solid $green;
  	background-color: white;
 	display: flex;
@@ -1015,7 +1016,7 @@ a.category__box:hover {
 		background-color: white;
 		font-family: $sans;
 		color: $green;
-		width: 100vw;	
+		//width: 100vw;	
 		
 		h3 {
 			font-weight: 800;
@@ -1037,7 +1038,7 @@ a.category__box:hover {
 		}
 	}
 	&__left {
-		width: 100%;
+		//width: 100%;
 		padding: 1em;
 		border-bottom: .5px solid $green;
 		
@@ -1085,7 +1086,7 @@ a.category__box:hover {
 		}
 	}	
 	&__right {
-		width: 100%;
+		//width: 100%;
 		padding: 1em;
 		
 		@media (min-width: 40rem) {
@@ -1139,7 +1140,7 @@ a.category__box:hover {
 		border-right: $border;
 		border-left: $border;
 		border-bottom: $border;
-		width: 100vw;
+		//width: 100vw;
 		display: flex;
 		flex-flow: column;
 		flex-wrap: wrap;
@@ -1151,7 +1152,7 @@ a.category__box:hover {
 		}
 	}
 	&__images {
-		width: 100vw;
+		//width: 100vw;
   		position: relative;
 		display: flex;
 		align-items: center;
@@ -1258,7 +1259,7 @@ a.category__box:hover {
 }
 
 .mySlides1, .mySlides2, .mySlides3, .myslides4 {
-	width: 100%;
+	//width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -1330,7 +1331,7 @@ a.category__box:hover {
 .tags {
 	
 	&__container {
-		width: 100%;
+		//width: 100%;
 		background-color: white;
 		padding: 1em;
 		border-right: $border;
@@ -1364,7 +1365,7 @@ a.category__box:hover {
 		background-color: white;
 		font-family: $sans;
 		color: $green;
-		width: 100vw;
+		//width: 100vw;
 		
 		@media (min-width: 40rem) {
 			border-right: none;
@@ -1397,7 +1398,7 @@ a.category__box:hover {
 
 /* footer */
 .footer {
-	width: 100vw;
+	//width: 100vw;
 	background-color: $beige;
 	border: $border;
 	border-top: none;
@@ -1409,7 +1410,7 @@ a.category__box:hover {
 	
 	&__content {
 		width: 100%;
-		height: 100%;
+		//height: 100%;
 	}
 	&__credit {
 		padding: 1em;
