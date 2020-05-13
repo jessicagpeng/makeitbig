@@ -1136,7 +1136,8 @@ a.category__box:hover {
 	}
 }
 .proj {
-	&__container{
+	
+	&__container {
 		border-right: $border;
 		border-left: $border;
 		border-bottom: $border;
@@ -1155,17 +1156,26 @@ a.category__box:hover {
 		//width: 100vw;
   		position: relative;
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		align-content: center;
+		//align-items: center;
+		//justify-content: center;
+		//align-content: center;
 		
 		@media (min-width: 40rem) {
 			width: 65%;
 			margin: inherit;
 		}
 		
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			max-height: 70vh;
+			object-fit: contain;
+			user-select: none;
+		}
+		
 		&__left {
-			height: 100%;
+			//height: 100%;
 			
 			@media (min-width: 40rem) {
 				border-right: $border;
@@ -1178,7 +1188,7 @@ a.category__box:hover {
 			}
 		}
 		&__right {
-			height: 100%;
+			//height: 100%;
 			
 			@media (min-width: 40rem) {
 				border-left: $border;
@@ -1250,12 +1260,6 @@ a.category__box:hover {
 			color: $green;
 		}
 	}
-	
-	&__image {
-		img {
-			max-height: 70vh;
-		}
-	}
 }
 
 .mySlides1, .mySlides2, .mySlides3, .myslides4 {
@@ -1277,11 +1281,10 @@ a.category__box:hover {
 /* Next & previous buttons */
 .prev, .next {
   	cursor: pointer;
-  	position: relative;
+  	position: absolute;
   	top: 50%;
-  	width: auto;
+	left: 45%;
   	padding: .5em;
-  	margin-top: -22px;
   	color: $green;
   	font-weight: bold;
   	font-size: 18px;
@@ -1297,7 +1300,7 @@ a.category__box:hover {
 }
 .proj__images__right,  .proj__images__left {
 	cursor: pointer;
-
+	position: relative;
 }
 
 /* On hover, add a black background color with a little bit see-through */
