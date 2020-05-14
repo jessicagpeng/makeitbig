@@ -48,7 +48,7 @@ $body: 'Raleway', sans-serif;
 
 html, .body {
 //	height: 100%;
-//	width: 100vw;
+	width: 100vw;
 }
 
 /* logo */
@@ -363,6 +363,15 @@ html, .body {
 			padding: 2.5em;
 		}
 	}
+	
+	&__preview {
+		min-height: 100vh;
+		width: 100vw;
+		top: 3em;
+		border-left: $border;
+		border-right: $border;
+		background-color: $beige;
+	}
 }
 
 /* HOME */
@@ -662,7 +671,7 @@ html, .body {
 	
 	&__container {
 		position: absolute;
-		//width: 100%;
+		width: 100%;
 		top: 30em;
 		display: flex;
 		align-content: center;
@@ -916,7 +925,7 @@ a.category__box:hover {
 	}
 
 	&:hover {
-	  background-color: $beige;
+	  background-color: $lightgreen;
 	}
 	&:active {
 	  background-color: $lightgreen;
@@ -1358,10 +1367,7 @@ a.category__box:hover {
 		}
 	}
 }
-.tag {
-	border: solid 1px $green;
-	display: inline-block;
-}
+
 
 /* About Page */
 .hide {
@@ -1407,6 +1413,92 @@ a.category__box:hover {
 	}
 }
 
+/* preview */
+
+.preview {
+	
+	&__container {
+		position: absolute;
+		top: 6em;
+		width: 100vw;
+		padding: 1em;
+		
+		@media (min-width: 35rem) {
+			top: 10em;
+			padding: 3em;
+		}
+		@media (min-width: 60rem) {
+			top: 14em;
+			padding: 5em;
+		}
+	}
+	&__title {
+		margin-bottom: 2.5em;
+		
+		&__text {
+			color: $green;
+			font-family: $display;
+			font-size: 3em;
+			text-align: center;
+			line-height: 1.35em;
+					
+			@media (min-width: 35rem) {
+				font-size: 3.2em;
+			}
+			@media (min-width: 60rem) {
+				font-size: 3.4em;
+			}
+		}
+		
+		b {
+			text-decoration: underline;
+		}
+	}
+	
+	&__info {
+		padding: 0 2em;
+		@media (min-width: 35rem) {
+			padding: 0 3em;
+		}
+		@media (min-width: 60rem) {
+			padding: 0 5em;
+		}
+		
+
+		&__text {
+			font-family: $sans;
+			font-size: .9em;
+			color: $green;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 1em;
+			line-height: 1.5em;
+			@media (min-width: 35rem) {
+				font-size: 1em;
+			}
+			@media (min-width: 60rem) {
+				font-size: 1em;
+			}
+		}
+		&__see {
+			font-family: $sans;
+			font-size: 1em;
+			color: $green;
+			font-weight: bold;
+			text-align: center;
+			margin-bottom: 1em;
+			line-height: 1.5em;
+			
+			@media (min-width: 35rem) {
+				font-size: 1.1em;
+			}
+			@media (min-width: 60rem) {
+				font-size: 1.2em;
+			}
+		}
+	}
+	
+}
 /* footer */
 .footer {
 	//width: 100vw;
