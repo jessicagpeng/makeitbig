@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="initial-scale=1.0,width=device-width" name="viewport">
+
+	<title>Sam Jones</title>
+
+	<link href="../../../css/build/styles.css" rel="stylesheet" type="text/css">
+	<link href="../../../css/build/reset.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="../../../images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../../images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../../images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+	<div id="top"></div>
+	<header class="site-header">
+		<div id="navbar">
+			<div class= "site-logo"> 
+				<a class="site-logo-link" href="../../../index.html">
+			  		<div class="logomark"></div>
+			  		<h1 class="site-title"> <a class="site-title-link" href="../../../index.html">Make It BIG</a> </h1>
+				</a> 
+			</div>
+		<button class="menu-icon  js-menu-icon">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</button>
+		<!--<div class="nav-underline"></div>-->
+		<script>
+			function myFunction(x) {
+				x.classList.toggle("change");
+			}
+		</script>
+		<nav class="primary-nav">
+		  	<ul class="nav-links">
+				<li><a href="../../students.html">Students</a></li>
+				<li><a href="../../work.html">Work</a></li>
+				<li><a href="../../about.html">About</a></li>
+		 	</ul>
+		</nav>
+		</div>
+	</header>
+	
+	
+	<div class="site">
+		<div class="site__title__name">
+			<h2 class="site__name"> 
+				Sam Jones<!-- replace with student name -->
+			</h2>
+		</div>
+
+		<div class="tab">
+			<button class="tablink" onclick="openPage('info', this )" id="defaultOpen">?</button>
+			<button class="tablink" onclick="openPage('proj1', this)" >Noticing Nature<!-- replace with project name --></button>
+			<button class="tablink" onclick="openPage('proj2', this)">Think Beautiful Ideas<!-- replace with project name --></button>
+			<button class="tablink" onclick="openPage('proj3', this)">Bijan Berahimi Lecture<!-- replace with project name --></button>
+
+		</div>
+
+		<div id="info" class="tabcontent">
+		<div class="info__container">
+				<div class="info__left">
+
+					<div class="info__interview">
+						<h3 class="question">
+						What's a big move that has shaped you?
+						</h3>
+					</div>
+					<div class="info__longresponse">
+						<p class="answer">
+						Deciding to leave South Africa for America, with hardly any money in my bank account, on Christmas day in 2010. I have somehow survived here for almost a decade as a student my whole time in this crazy country.
+						</p>
+					</div>
+
+					
+					<div class="info__contact">
+						<div class="info__tag"><strong>MFA2</strong></div> <div class="info__tag"> <a href="https://www.instagram.com/komodosam/" target="_blank"> IG: @komodosam </a> </div> <div class="info__tag"> <a href="http://www.samjonescreative.com/" target="_blank"> samjomescreative.com </a></div>
+					</div>
+					
+				</div>
+			
+				<div class="info__right">
+
+					
+					<div class="info__question">
+						<h3 class="question">
+							Dream job?
+						</h3>
+					</div>
+					<div class="info__answer">
+						<p class="answer">
+							To be making film title sequences.
+						</p>
+					</div>
+					<div class="info__question">
+						<h3 class="question">
+							Who is your favorite GD faculty member?
+						</h3>
+					</div>
+					<div class="info__answer">
+						<p class="answer">
+							I don't like to pick favorites. Maybe Michael if he didn't support Manchester City :)
+						</p>
+					</div>
+					<div class="info__question">
+						<h3 class="question">
+							Name an important lesson you've learned so far in your academic career.
+						</h3>
+					</div>
+					<div class="info__answer">
+						<p class="answer">
+							Writing can help a lot to formulate your idea.
+						</p>
+					</div>
+					<div class="info__question">
+						<h3 class="question">
+							What is your favorite part of the design process? 
+						</h3>
+					</div>
+					<div class="info__answer">
+						<p class="answer">
+							When I get in the flow while working on a project and can't stop working on it because new ideas keep coming up
+						</p>
+					</div>
+					<div class="info__question">
+						<h3 class="question">
+							How have current (big) circumstances affected your perspective on design? 
+						</h3>
+					</div>
+					<div class="info__answer">
+						<p class="answer">
+							Respond to a disaster by making things in reaction to it.
+						</p>
+					</div>
+					<div class="info__question">
+						<h3 class="question">
+							What's your signature design move? 
+						</h3>
+					</div>
+					<div class="info__answer">
+						<p class="answer">
+							To put something in motion after designing it.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="proj1" class="tabcontent">
+			<div class="proj__container">
+					<div class="proj__images">				
+						<div class="proj__images__left" onclick="plusSlides(-1, 0)">
+							<a class="prev">&#10094;</a>
+						</div>
+						<div class="image">
+							
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_01.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_02.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_03.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_04.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_05.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_06.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_07.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_08.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_09.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_10.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides1">
+								<video width="100%" controls>
+									<source src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_01.webm" type="video/webm">
+									<source src="../../../images/student/mfa2/sam-jones/Sam_Jones_NoticingNature_01.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							
+						</div>
+						<div class="proj__images__right" onclick="plusSlides(1, 0)">
+							<a class="next" >&#10095;</a>
+						</div>
+					</div>
+
+					<div class="proj__text">
+						<h3 class="headline"> Noticing Nature </h3>
+						<p class="caption"> Noticing Nature aims to tell a <strong>new</strong> story that is more centered around nature. It explores how everything, including ourselves, is connected, and how important it is that we take the time to slow down and notice the nature that surrounds us every day.</p>
+						<p class="caption"> View the website <strong><a href="http://www.noticingnature.com" target="_blank">here.</a></strong></p>
+					</div>
+				</div>
+		</div>
+
+		<div id="proj2" class="tabcontent">
+			 <div class="proj__container">
+					<div class="proj__images">				
+						<div class="proj__images__left" onclick="plusSlides(-1, 1)">
+							<a class="prev">&#10094;</a>
+						</div>
+						<div class="image">
+							<div class="mySlides2">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_Makena_Janssen_TerryIrwinVisitingDesignerPoster.jpg"  style="width:100%">
+							</div>
+							<div class="mySlides2">
+								<video width="100%" controls>
+									<source src="../../../images/student/mfa2/sam-jones/Sam_Jones_Think_Beautiful_Ideas_For_A_Sustainable_World.webm" type="video/webm">
+									<source src="../../../images/student/mfa2/sam-jones/Sam_Jones_Think_Beautiful_Ideas_For_A_Sustainable_World.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<div class="proj__images__right" onclick="plusSlides(1, 1)">
+							<a class="next" >&#10095;</a>
+						</div>
+					</div>
+
+					<div class="proj__text">
+						<h3 class="headline">Think Beautiful Ideas for a Sustainable World</h3>
+						<p class="caption"> Poster and social media animation for Terry Irwin lecture. Inspired by Fritjof Capra’s book <strong>Web of Life</strong>, our goal was to show how everything in nature is connected and works as a system. The words and letters in the ground are absorbed by the plant’s roots. They travel through the stem and then leave the plant as seeds which are picked up by insects and fed back into the ground. The cycle then repeats itself.</p>
+					</div>
+				</div>
+		</div>
+
+		<div id="proj3" class="tabcontent">
+			<div class="proj__container">
+					<div class="proj__images">				
+						<div class="proj__images__left" onclick="plusSlides(-1, 2)">
+							<a class="prev" >&#10094;</a>
+						</div>
+						<div class="image">
+							<div class="mySlides4">
+								<img src="../../../images/student/mfa2/sam-jones/Sam_Jones_BijanBerahimiGIF.gif"  style="width:100%">
+							</div>
+						</div>
+
+						<div class="proj__images__right" onclick="plusSlides(1, 2)">
+							<a class="next" >&#10095;</a>
+						</div>
+
+					</div>
+
+					<div class="proj__text">
+						<h3 class="headline">Bijan Berahimi Lecture</h3>
+						<p class="caption"> Poster and social media graphics made for visiting artist lecture series at CalArts featuring Bijan Berahimi. We wanted to achieve two main things with the graphics… to show Bijan’s fun, positive personality, and to illustrate the importance process plays in his design making.</p>
+					</div>
+				</div>
+		</div>
+
+		
+		
+		
+	</div>
+	
+</body>
+</html>
+
+<script src="../../../js/scripts.js"></script>
