@@ -56,12 +56,15 @@ html, .body {
 	display: flex;
 }
 .logomark {
-	background-color: $beige;
+	background-color: white;
 	width: 3em;
 	height: 100%;
 	border-style: none solid none none;
 	border-color: $green;
 	border-width: 1px;
+}
+.logomark:hover {
+	background-color: $yellow;
 }
 .site-title-link {
 	color: $green;
