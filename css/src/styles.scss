@@ -1282,8 +1282,46 @@ a.category__box:hover {
 		}
 	}
 }
-.mySlides1, .mySlides2, .mySlides3, .myslides4 {
-	//width: 100%;
+.mySlides1 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	border-left: $border;
+	border-right: $border;
+	
+	@media (min-width: 40rem) {
+		border: none;
+	}
+}
+.mySlides2, {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	border-left: $border;
+	border-right: $border;
+	
+	@media (min-width: 40rem) {
+		border: none;
+	}
+}
+.mySlides3 {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	border-left: $border;
+	border-right: $border;
+	
+	@media (min-width: 40rem) {
+		border: none;
+	}
+}
+.myslides4 {
 	height: 100%;
 	display: flex;
 	align-items: center;
