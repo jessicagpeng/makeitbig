@@ -998,10 +998,20 @@ a.category__box:hover {
 			font-size: .9em;
 		}
 	}
+	&__star {
+		width: 100%;
+		font-family: $sans;
+		font-size: .7em;
+		padding: .5em;
+		
+		@media (min-width: 30rem) {
+			font-size: .7em;
+		}
+	}
 }
 .names {
 	margin-bottom: .6em;
-	
+	color: $green;
 	a {
 		text-decoration: underline;
 		color: $green;
